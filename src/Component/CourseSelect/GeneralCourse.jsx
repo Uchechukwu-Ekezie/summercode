@@ -14,7 +14,7 @@ function GeneralCourse() {
       course: "Backend Development",
       pic: "/Assets/Image/web-dev.png",
       desc: "Learn how to build the server-side of web applications, work with databases, and create RESTful APIs using Node.js and Express.js.",
-      path: "/",
+      path: "/courses/backdesign",
     },
     {
       id: "03",
