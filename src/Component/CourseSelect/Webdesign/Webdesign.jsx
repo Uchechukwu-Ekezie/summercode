@@ -1,12 +1,14 @@
 import React from "react";
+import 'aos/dist/aos.css'
 
 function Webdesign() {
+    
   return (
     <div>
-      <section className="pt-32">
+      <section  className="pt-32">
         <div className="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8 lg:py-16">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-            <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+            <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in">
               <img
                 alt=""
                 src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
@@ -14,7 +16,7 @@ function Webdesign() {
               />
             </div>
 
-            <div className="lg:py-24">
+            <div className="lg:py-24" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in">
               <h2 className="text-3xl font-bold sm:text-4xl">
                 Front-End Online Course, <br /> kickstart your kid career
                 journey in TECH

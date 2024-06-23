@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import RootLayout from "./Layouts/RootLayout";
 import Home from './page/Home';
 import Courses from './page/Courses';
-import Webdesign from './Component/CourseSelect/Webdesign/Webdesign';
 import Webdev from './page/Webdev';
 
 function App() {
