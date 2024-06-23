@@ -18,7 +18,7 @@ function Navigation({ Enroll }) {
   ];
 
   return (
-    <header className="fixed z-50 w-full shadow-md bg- ">
+    <header className="fixed z-50 w-full bg-yellow-500 shadow-md">
       <div className="container flex items-center justify-between mx-auto my-2 md:px-6">
         <Link to="/" className="flex items-center">
           <img
@@ -59,8 +59,8 @@ function Navigation({ Enroll }) {
                 </NavLink>
               </li>
             ))}
-           <li className="mt-4 md:hidden">
-              <Button txt="Speak With Us" className="bg-white rounded-xl " />
+            <li className="mt-4 md:hidden">
+              <Button txt="Speak With Us" className="bg-white rounded-xl" />
             </li>
           </ul>
         </nav>
