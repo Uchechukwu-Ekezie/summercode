@@ -29,15 +29,15 @@ function Webdesign() {
                 repellat.
               </p>
 
-              <div className="flex flex-row flex-col items-center sm:flex">
+              <div className="flex flex-col items-center sm:flex">
                 <a
-                  href="#"
+                  href="/"
                   className="inline-block px-5 py-3 mt-8 text-sm font-medium text-white transition bg-yellow-600 rounded hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
                 >
                   Register Now
                 </a>
                 <a
-                  href="#"
+                  href="/contact"
                   className="inline-block px-6 py-3 mt-3 text-sm font-medium text-white transition bg-indigo-600 rounded hover:bg-yellow-700 focus:outline-none focus:ring focus:ring-yellow-400"
                 >
                   Contact Us
