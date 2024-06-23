@@ -4,7 +4,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import "../Navbar/Navbar.css";
 import Button from "../Button/Button";
 
-function Navigation({ Enroll }) {
+function CourseNavbar({ Enroll }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -13,12 +13,14 @@ function Navigation({ Enroll }) {
 
   const navItems = [
     { id: 1, text: "Home", link: "/" },
-    { id: 2, text: "Courses", link: "/courses" },
-    { id: 3, text: "Contact", link: "/contact" },
+    { id: 2, text: "Web Design", link: "/" },
+    { id: 3, text: "UI/UX Design", link: "/courses" },
+    { id: 4, text: "Digital Marketing", link: "/contact" },
+    { id: 4, text: "Cyber security", link: "/contact" },
   ];
 
   return (
-    <header className="fixed z-50 w-full shadow-md bg- ">
+    <header className="fixed z-50 w-full bg-yellow-500 shadow-md ">
       <div className="container flex items-center justify-between mx-auto my-2 md:px-6">
         <Link to="/" className="flex items-center">
           <img
@@ -59,7 +61,7 @@ function Navigation({ Enroll }) {
                 </NavLink>
               </li>
             ))}
-           <li className="mt-4 md:hidden">
+            <li className="mt-4 md:hidden">
               <Button txt="Speak With Us" className="bg-white rounded-xl " />
             </li>
           </ul>
@@ -73,4 +75,4 @@ function Navigation({ Enroll }) {
   );
 }
 
-export default Navigation;
+export default CourseNavbar;

@@ -1,0 +1,19 @@
+nav {
+    transition: transform 300ms ease-in-out;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  margin: 0;
+}
+.main-content {
+    margin-top: 6rem; /* Adjust this value as needed */
+  }
+  
+  @media (min-width: 768px) {
+    .main-content {
+      margin-top: 8rem; /* Adjust this value as needed */
+    }
+  }
+  
