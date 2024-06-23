@@ -1,9 +1,11 @@
+import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import RootLayout from "./Layouts/RootLayout";
 import Home from './page/Home';
 import Courses from './page/Courses';
 import Webdev from './page/Webdev';
+import Backdev from './page/Backdev';
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/courses" element={<Courses />} />
             <Route path="/courses/webdesign" element={<Webdev />} />
+            <Route path="/courses/backdesign" element={<Backdev/>} />
           </Route>
         </Routes>
       </Router>
