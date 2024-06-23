@@ -2,7 +2,7 @@ import React from 'react';
 
 function Contacts() {
   return (
-    <section className="pt-24 text-white bg-white">
+    <section className="pt-24 text-white bg-white" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in">
       <div className="max-w-screen-xl px-4 mx-auto py-14 sm:px-6 lg:px-8">
         <h1 className="mb-6 text-2xl font-bold text-center text-yellow-500">Fill the form below to contact us!</h1>
         <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
