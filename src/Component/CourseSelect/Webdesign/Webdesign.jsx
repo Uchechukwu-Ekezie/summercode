@@ -31,7 +31,7 @@ function Webdesign() {
 
               <div className="flex flex-col items-center sm:flex">
                 <a
-                  href="/"
+                  href="/enroll"
                   className="inline-block px-5 py-3 mt-8 text-sm font-medium text-white transition bg-yellow-600 rounded hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
                 >
                   Register Now
