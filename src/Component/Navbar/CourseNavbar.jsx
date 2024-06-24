@@ -13,7 +13,7 @@ function CourseNavbar({ Enroll }) {
 
   const navItems = [
     { id: 1, text: "Home", link: "/" },
-    { id: 4, text: "AI & ML", link: "/courses/ai_ml" },
+    { id: 4, text: "AI & ML", link: "/courses/ai_machine" },
     { id: 4, text: "Web Dev", link: "/courses/webdesign" },
     { id: 3, text: "Cyber Security", link: "/courses/cyber-sec" },
     { id: 2, text: "Digital Media", link: "/courses/uiuxdesign" }
