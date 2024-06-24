@@ -62,7 +62,7 @@ function CourseNavbar({ Enroll }) {
               </li>
             ))}
             <li className="mt-4 md:hidden">
-              <Link to="/enroll">
+              <Link to="/contact">
                 <Button
                   txt="Speak With Us"
                   className="text-black bg-white rounded-xl"
@@ -73,7 +73,7 @@ function CourseNavbar({ Enroll }) {
         </nav>
 
         <div className="hidden md:block">
-          <Link to="/enroll">
+          <Link to="/contact">
             <Button
               txt="Speak With Us"
               className="text-black bg-white rounded-xl"
