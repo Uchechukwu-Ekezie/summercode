@@ -60,13 +60,23 @@ function Navigation({ Enroll }) {
               </li>
             ))}
             <li className="mt-4 md:hidden">
-              <Button txt="Speak With Us" className="bg-white rounded-xl" />
+              <Link to="/enroll">
+                <Button
+                  txt="Speak With Us"
+                  className="text-black bg-white rounded-xl"
+                />
+              </Link>
             </li>
           </ul>
         </nav>
 
         <div className="hidden md:block">
-          <Button txt="Speak With Us" className="text-black bg-white rounded-xl" />
+          <Link to="/enroll">
+            <Button
+              txt="Speak With Us"
+              className="text-black bg-white rounded-xl"
+            />
+          </Link>
         </div>
       </div>
     </header>

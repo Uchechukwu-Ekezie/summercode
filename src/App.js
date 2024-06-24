@@ -8,6 +8,8 @@ import Webdev from './page/Webdev';
 import Contact from './page/Contact';
 import Registrationpage from './page/Registrationpage';
 import Backdev from './page/Backdev';
+import Uiuxdev from './page/Uiuxdev';
+import DigitalMarketdev from './page/DigitalMarketdev';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/enroll" element={<Registrationpage/>}/>
             <Route path="/courses/backdesign" element={<Backdev/>} />
+            <Route path="/courses/uiuxdesign" element={<Uiuxdev/>} />
+            <Route path="/courses/digital-design" element={< DigitalMarketdev/>} />
           </Route>
         </Routes>
       </Router>
