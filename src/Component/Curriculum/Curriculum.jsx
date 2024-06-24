@@ -17,13 +17,13 @@ const Curriculum = ({ faqs }) => {
         <div key={index} className="w-3/5 mx-auto mb-4">
           <button
             onClick={() => toggleAnswer(index)}
-            className="flex items-center justify-between w-full p-4 pb-5 text-xl text-white rounded-lg bg-slate-500"
+            className="flex items-center justify-between w-full p-4 pb-5 text-xl text-white bg-slate-500"
           >
             {faq.question}
             <img src="/Assets/Image/plus.png" className="w-6" alt="Toggle Answer" />
           </button>
           {visibleAnswers[index] && (
-            <div className="p-4 text-lg text-left text-white bg-gray-800">
+            <div className="p-4 text-lg text-left text-white bg-slate-500 ">
               <p>{faq.answer}</p>
             </div>
           )}
