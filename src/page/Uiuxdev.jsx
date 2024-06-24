@@ -1,5 +1,5 @@
 import React from 'react'
-import Meant from '../Component/CourseSelect/Webdesign/Meant'
+// import Meant from '../Component/CourseSelect/Webdesign/Meant'
 import Uiuxdesign from '../Component/CourseSelect/Uiuxdesign/Uiuxdesign'
 import UserProfileCard from '../Component/Card/Profilecard'
 function Uiuxdev() {
@@ -11,7 +11,6 @@ function Uiuxdev() {
   return (
     <div>
         <Uiuxdesign/>
-        <Meant/>
         <div className="App">
         <UserProfileCard
           name="Kornebari Raphael Kpai"

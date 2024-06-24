@@ -1,8 +1,9 @@
 import React from "react";
 import Webdesign from "../Component/CourseSelect/Webdesign/Webdesign";
-import Meant from "../Component/CourseSelect/Webdesign/Meant";
+import Meant from "../Component/CourseSelect/Webdesign/Webmeant";
 import UserProfileCard from "../Component/Card/Profilecard";
 import Webcurriculum from "../Component/CourseSelect/Webdesign/Webcurriculum";
+import Webment from "../Component/CourseSelect/Webdesign/Webmeant";
 
 function Webdev() {
   const userStats = [
@@ -13,7 +14,7 @@ function Webdev() {
   return (
     <div>
       <Webdesign />
-      <Meant />
+      <Webment/>
       <Webcurriculum/>
       <div className="App">
         <UserProfileCard

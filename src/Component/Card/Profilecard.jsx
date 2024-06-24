@@ -2,7 +2,7 @@ import React from 'react';
 
 const UserProfileCard = ({ name, role, desc, image, stats }) => {
   return (
-    <div className="flex flex-col items-center max-w-xl px-4 py-4 mx-auto my-10 text-center border rounded-xl md:max-w-3xl md:flex-row md:items-start md:text-left" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in">
+    <div className="flex flex-col items-center max-w-xl px-4 py-4 mx-auto my-10 text-center border rounded-xl md:max-w-3xl md:flex-row md:items-start md:text-left" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in">
       <div className="mb-4 md:mr-6 md:mb-0">
         <img className="object-cover rounded-lg h-xl md:w-full" src={image} alt={name} />
       </div>

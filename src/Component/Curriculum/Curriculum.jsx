@@ -11,7 +11,9 @@ const Curriculum = ({ faqs }) => {
   };
 
   return (
-    <section className="pt-16 pb-10 bg-yellow-500 border-gray-800">
+    <section className="pt-16 pb-10 bg-yellow-500 border-gray-800" data-aos="fade-up"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in">
       <h1 className="mb-8 text-4xl text-center text-white">Course Curriculm</h1>
       {faqs.map((faq, index) => (
         <div key={index} className="w-3/5 mx-auto mb-4">
