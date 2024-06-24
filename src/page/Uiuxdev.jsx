@@ -1,13 +1,13 @@
 import React from 'react'
-import Backdesign from '../Component/CourseSelect/Backdesign/Backdesign'
 import Meant from '../Component/CourseSelect/Webdesign/Meant'
-function Backdev() {
+import Uiuxdesign from '../Component/CourseSelect/Uiuxdesign/Uiuxdesign'
+function Uiuxdev() {
   return (
     <div>
-        <Backdesign/>
+        <Uiuxdesign/>
         <Meant/>
     </div>
   )
 }
 
-export default Backdev
+export default Uiuxdev

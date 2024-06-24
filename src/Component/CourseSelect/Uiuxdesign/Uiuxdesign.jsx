@@ -1,7 +1,7 @@
 import React from "react";
 import 'aos/dist/aos.css'
 
-function Backdesign() {
+function Uiuxdesign() {
     
   return (
     <div>
@@ -18,7 +18,7 @@ function Backdesign() {
 
             <div className="lg:py-24" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in">
               <h2 className="text-3xl font-bold sm:text-4xl">
-                Back-End Online Course, <br /> kickstart your kid career
+                UI-UX Online Course, <br /> kickstart your kid career
                 journey in TECH
               </h2>
 
@@ -52,4 +52,4 @@ function Backdesign() {
   );
 }
 
-export default Backdesign;
+export default Uiuxdesign;

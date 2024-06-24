@@ -18,33 +18,17 @@ function GeneralCourse() {
     },
     {
       id: "03",
-      course: "Mobile Development",
-      pic: "/Assets/Image/app-development.png",
-      desc: "Get introduced to the world of mobile development, learn how to build mobile applications for both Android and iOS devices using Flutter.",
-      path: "/",
-    },
-    {
-      id: "04",
       course: "UI/UX Design",
       pic: "/Assets/Image/design.png",
       desc: "Learn how to design user interfaces and user experiences for web and mobile applications, work with design tools like Figma and Adobe XD.",
-      path: "/",
-    },
-    // create for cybersecurity digital marketing 
-    
-    {
-        id: "05",
-        course: "Machine Learning",
-        pic: "/Assets/Image/machine-learning.png",
-        desc: "Learn how to secure web applications, work with encryption, and secure data using the latest technologies in the cybersecurity field.",
-        path: "/"
+      path: "/courses/uiuxdesign",
     },
     {
-        id: "06",
+        id: "04",
         course: "Digital Marketing",
         pic: "/Assets/Image/digitalmarketing.png",
         desc: "Learn how to market products and services using digital technologies, work with social media platforms, and create online marketing campaigns.",
-        path: "/"
+        path: "/courses/digital-design"
     }
   ];
 

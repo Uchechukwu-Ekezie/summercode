@@ -1,13 +1,14 @@
 import React from 'react'
 import Backdesign from '../Component/CourseSelect/Backdesign/Backdesign'
 import Meant from '../Component/CourseSelect/Webdesign/Meant'
-function Backdev() {
+import DigitalMarket from '../Component/CourseSelect/DigitalMarket/DigitalMarket'
+function DigitalMarketdev() {
   return (
     <div>
-        <Backdesign/>
+        <DigitalMarket/>
         <Meant/>
     </div>
   )
 }
 
-export default Backdev
+export default DigitalMarketdev

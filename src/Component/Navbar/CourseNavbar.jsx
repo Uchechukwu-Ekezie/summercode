@@ -13,10 +13,10 @@ function CourseNavbar({ Enroll }) {
 
   const navItems = [
     { id: 1, text: "Home", link: "/" },
-    { id: 2, text: "Web Design", link: "/web" },
-    { id: 3, text: "UI/UX Design", link: "/courses" },
-    { id: 4, text: "Digital Marketing", link: "/" },
-    { id: 4, text: "Cyber security", link: "/" },
+    { id: 2, text: "Web Development", link: "/courses/webdesign" },
+    { id: 3, text: "UI/UX Design", link: "/courses/uiuxdesign" },
+    { id: 4, text: "Digital Marketing", link: "/courses/digital-mar" },
+    { id: 5, text: "Cyber Security", link: "/courses/cyber-sec" },
   ];
 
   return (
@@ -62,13 +62,23 @@ function CourseNavbar({ Enroll }) {
               </li>
             ))}
             <li className="mt-4 md:hidden">
-              <Button txt="Speak With Us" className="bg-white rounded-xl " />
+              <Link to="/enroll">
+                <Button
+                  txt="Speak With Us"
+                  className="text-black bg-white rounded-xl"
+                />
+              </Link>
             </li>
           </ul>
         </nav>
 
         <div className="hidden md:block">
-          <Button txt="Speak With Us" className="text-black bg-white rounded-xl" />
+          <Link to="/enroll">
+            <Button
+              txt="Speak With Us"
+              className="text-black bg-white rounded-xl"
+            />
+          </Link>
         </div>
       </div>
     </header>
