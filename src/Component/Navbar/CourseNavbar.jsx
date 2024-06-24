@@ -13,10 +13,10 @@ function CourseNavbar({ Enroll }) {
 
   const navItems = [
     { id: 1, text: "Home", link: "/" },
-    { id: 2, text: "Web Development", link: "/courses/webdesign" },
-    { id: 3, text: "UI/UX Design", link: "/courses/uiuxdesign" },
-    { id: 4, text: "Digital Marketing", link: "/courses/digital-design" },
-    { id: 5, text: "Cyber Security", link: "/courses/cyber-sec" },
+    { id: 4, text: "AI & ML", link: "/courses/ai_ml" },
+    { id: 4, text: "Web Dev", link: "/courses/webdesign" },
+    { id: 3, text: "Cyber Security", link: "/courses/cyber-sec" },
+    { id: 2, text: "Digital Media", link: "/courses/uiuxdesign" }
   ];
 
   return (

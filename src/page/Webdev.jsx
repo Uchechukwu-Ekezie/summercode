@@ -2,6 +2,7 @@ import React from "react";
 import Webdesign from "../Component/CourseSelect/Webdesign/Webdesign";
 import Meant from "../Component/CourseSelect/Webdesign/Meant";
 import UserProfileCard from "../Component/Card/Profilecard";
+import Webcurriculum from "../Component/CourseSelect/Webdesign/Webcurriculum";
 
 function Webdev() {
   const userStats = [
@@ -13,6 +14,7 @@ function Webdev() {
     <div>
       <Webdesign />
       <Meant />
+      <Webcurriculum/>
       <div className="App">
         <UserProfileCard
           name="Okikijesu Paul Oladimeji"

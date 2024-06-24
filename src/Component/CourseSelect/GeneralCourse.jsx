@@ -34,22 +34,22 @@ function GeneralCourse() {
 
   return (
     <div className="py-10">
-      <div className="container mx-auto my-10">
+      <div className="container px-4 mx-auto my-10">
         <h1 className="text-4xl font-bold text-center">Our Courses</h1>
         <p className="mt-2 text-center text-gray-500">
           Choose the course that best suits you
         </p>
-        <div className="grid grid-cols-1 gap-6 mt-10 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 mt-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {courses.map((course) => (
-            <div key={course.id} className="relative bg-white rounded-lg shadow-md">
-              <div className="relative overflow-hidden rounded-t-lg">
+            <div key={course.id} className="flex flex-col overflow-hidden bg-white rounded-lg shadow-md">
+              <div className="relative overflow-hidden">
                 <img
                   src={course.pic}
                   alt={course.course}
-                  className="object-cover w-full h-64"
+                  className="object-cover w-full h-48 sm:h-64 lg:h-48"
                 />
               </div>
-              <div className="p-6">
+              <div className="flex-1 p-6">
                 <h2 className="text-xl font-semibold">{course.course}</h2>
                 <p className="mt-2 text-gray-700">{course.desc}</p>
               </div>
