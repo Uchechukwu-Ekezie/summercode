@@ -1,13 +1,14 @@
 import React from "react";
-import './Hero.css'; // Make sure to import your CSS file
+import './Hero.css'; 
+import 'aos/dist/aos.css'// Make sure to import your CSS file
 
 function CourseHero() {
   return (
-    <section className="pt-32">
+    <section className="pt-32" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in">
       <div className="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
           <div className="lg:py-24">
-            <h2 className="text-3xl font-bold sm:text-4xl">
+            <h2 className="text-3xl font-bold sm:text-4xl" >
               Fast-track your journey into Tech
             </h2>
 

@@ -10,6 +10,7 @@ import Registrationpage from './page/Registrationpage';
 import Backdev from './page/Backdev';
 import Uiuxdev from './page/Uiuxdev';
 import DigitalMarketdev from './page/DigitalMarketdev';
+import Cybersec from './page/Cybersec';
 
 function App() {
   return (
@@ -20,12 +21,12 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/courses" element={<Courses />} />
             <Route path="/courses/webdesign" element={<Webdev />} />
-
             <Route path="/contact" element={<Contact />} />
             <Route path="/enroll" element={<Registrationpage/>}/>
             <Route path="/courses/backdesign" element={<Backdev/>} />
             <Route path="/courses/uiuxdesign" element={<Uiuxdev/>} />
             <Route path="/courses/digital-design" element={< DigitalMarketdev/>} />
+            <Route path="/courses/cyber-sec" element={<Cybersec/>}/>
           </Route>
         </Routes>
       </Router>
