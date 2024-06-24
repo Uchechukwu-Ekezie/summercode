@@ -13,10 +13,10 @@ function CourseNavbar({ Enroll }) {
 
   const navItems = [
     { id: 1, text: "Home", link: "/" },
-    { id: 2, text: "Web Design", link: "/" },
+    { id: 2, text: "Web Design", link: "/web" },
     { id: 3, text: "UI/UX Design", link: "/courses" },
-    { id: 4, text: "Digital Marketing", link: "/contact" },
-    { id: 4, text: "Cyber security", link: "/contact" },
+    { id: 4, text: "Digital Marketing", link: "/" },
+    { id: 4, text: "Cyber security", link: "/" },
   ];
 
   return (
