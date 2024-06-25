@@ -7,7 +7,7 @@ import TechSkill from '../Component/Techskills/TechSkill'
 
 function Home() {
   return (
-    <div>
+    <div data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in">
         <Hero/>
         <Banner/>
         <TechSkill/>
