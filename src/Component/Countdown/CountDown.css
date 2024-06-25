@@ -1,0 +1,5 @@
+.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%; /* Adjust the z-index as needed to ensure it's on top */
+  }

@@ -7,7 +7,7 @@ function GeneralCourse() {
       course: "Artifical Intelligence & Machine Learning",
       pic: "/Assets/Image/web-dev.png",
       desc: "Learn how to build the server-side of web applications, work with databases, and create RESTful APIs using Node.js and Express.js.",
-      path: "/courses/backdesign",
+      path: "/courses/ai_machine",
     },
     {
       id: "02",
