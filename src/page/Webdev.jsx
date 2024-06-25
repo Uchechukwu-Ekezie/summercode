@@ -1,16 +1,10 @@
 import React from "react";
 import Webdesign from "../Component/CourseSelect/Webdesign/Webdesign";
-import Meant from "../Component/CourseSelect/Webdesign/Webmeant";
 import UserProfileCard from "../Component/Card/Profilecard";
 import Webcurriculum from "../Component/CourseSelect/Webdesign/Webcurriculum";
 import Webment from "../Component/CourseSelect/Webdesign/Webmeant";
 
 function Webdev() {
-  const userStats = [
-    { label: "Articles", value: 13 },
-    { label: "Papers", value: 7 },
-    { label: "Followers", value: "2.5k" },
-  ];
   return (
     <div>
       <Webdesign />
@@ -23,7 +17,6 @@ function Webdev() {
           Paul is the CEO of Aided Technologies, a startup committed to empowering individuals to become better versions of themselves through the use of technology. His leadership at Aided Technologies reflects his commitment to innovation and excellence in the tech space."
           role="Web Developer"
           image="/Assets/Image/Okikijesu Paul Oladimeji.jpg"
-          stats={userStats}
         />
       </div>
     </div>

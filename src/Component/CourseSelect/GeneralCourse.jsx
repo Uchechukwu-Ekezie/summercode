@@ -4,28 +4,28 @@ function GeneralCourse() {
   const courses = [
     {
       id: "01",
+      course: "Artifical Intelligence & Machine Learning",
+      pic: "/Assets/Image/web-dev.png",
+      desc: "Learn how to build the server-side of web applications, work with databases, and create RESTful APIs using Node.js and Express.js.",
+      path: "/courses/backdesign",
+    },
+    {
+      id: "02",
       course: "Frontend Development",
       pic: "/Assets/Image/webbevelop.png",
       desc: "Get introduced to the latest technologies in the tech field, create websites with HTML and CSS, work with Git and GitHub, and get into the world of programming by learning the basics of JavaScript.",
       path: "/courses/webdesign",
     },
     {
-      id: "02",
-      course: "Backend Development",
-      pic: "/Assets/Image/web-dev.png",
-      desc: "Learn how to build the server-side of web applications, work with databases, and create RESTful APIs using Node.js and Express.js.",
-      path: "/courses/backdesign",
-    },
-    {
       id: "03",
-      course: "UI/UX Design",
+      course: "Cyber Security",
       pic: "/Assets/Image/design.png",
-      desc: "Learn how to design user interfaces and user experiences for web and mobile applications, work with design tools like Figma and Adobe XD.",
+      desc: " ",
       path: "/courses/uiuxdesign",
     },
     {
         id: "04",
-        course: "Digital Marketing",
+        course: "Digital Media",
         pic: "/Assets/Image/digitalmarketing.png",
         desc: "Learn how to market products and services using digital technologies, work with social media platforms, and create online marketing campaigns.",
         path: "/courses/digital-design"
