@@ -24,7 +24,7 @@ function Navigation({ Enroll }) {
           <img
             src="/Assets/Image/Colorful_Brain_Human_Technology_Logo-removebg-preview.png"
             alt="logo"
-            className="w-[40px] h-[40px] md:w-[100px] md:h-[100px] sm:w-[80px] sm:h-[80px]"
+            className="w-[40px] h-[40px] md:w-[100px] md:h-[100px] sm:w-[100px] sm:h-[100px]"
           />
         </Link>
 
