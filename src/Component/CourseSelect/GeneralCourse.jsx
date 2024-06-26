@@ -21,7 +21,7 @@ function GeneralCourse() {
       course: "Cyber Security",
       pic: "/Assets/Image/design.png",
       desc: " ",
-      path: "/courses/uiuxdesign",
+      path: "/courses/cyber-sec",
     },
     {
         id: "04",
