@@ -43,7 +43,7 @@ function ParentTest() {
         },
         {
           name: "Emeka Okeke",
-          testimonial: `This program has been a blessing for my family.
+          testimonial: `This program has been a blessing for my family. 
           My child looks forward to going to school every day, thanks to the dynamic and caring teachers.
           The personalized attention and the well-rounded curriculum have significantly boosted my child's confidence and academic performance.
           I can't recommend this program enough to other parents.`,
