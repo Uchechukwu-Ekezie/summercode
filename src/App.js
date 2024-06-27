@@ -11,11 +11,13 @@ import Uiuxdev from './page/Uiuxdev';
 import DigitalMarketdev from './page/DigitalMarketdev';
 import Cybersec from './page/Cybersec';
 import AiMachine from './page/AiMachine';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   return (
     <div className="App">
         <Router>
+          <ScrollToTop/>
         <Routes>
           <Route path="/" element={<RootLayout/>}>
             <Route index element={<Home />} />

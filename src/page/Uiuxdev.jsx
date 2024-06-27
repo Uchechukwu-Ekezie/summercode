@@ -4,12 +4,12 @@ import Uiuxdesign from '../Component/CourseSelect/Uiuxdesign/Uiuxdesign'
 import UserProfileCard from '../Component/Card/Profilecard'
 import UiCurriculum from '../Component/CourseSelect/Uiuxdesign/UiCurriculum';
 import UiMeant from '../Component/CourseSelect/Uiuxdesign/UiMeant';
+import UiHero from '../Component/CourseSelect/Uiuxdesign/UiHero';
 function Uiuxdev() {
   return (
     <div>
-        <Uiuxdesign/>
+        <UiHero/>
         <UiMeant/>
-        <UiCurriculum/>
         <div className="App">
         <UserProfileCard
           name="Kornebari Raphael Kpai"
@@ -18,6 +18,8 @@ function Uiuxdev() {
           image="/Assets/Image/Kornebari.jpg"
         />
       </div>
+        <UiCurriculum/>
+       
     </div>
   )
 }

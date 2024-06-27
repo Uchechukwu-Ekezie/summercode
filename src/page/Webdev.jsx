@@ -1,15 +1,14 @@
 import React from "react";
-import Webdesign from "../Component/CourseSelect/Webdesign/Webdesign";
 import UserProfileCard from "../Component/Card/Profilecard";
 import Webcurriculum from "../Component/CourseSelect/Webdesign/Webcurriculum";
 import Webment from "../Component/CourseSelect/Webdesign/Webmeant";
+import WebdevHero from "../Component/CourseSelect/Webdesign/WebdevHero";
 
 function Webdev() {
   return (
     <div>
-      <Webdesign />
+      <WebdevHero/>
       <Webment/>
-      <Webcurriculum/>
       <div className="App">
         <UserProfileCard
           name="Okikijesu Paul Oladimeji"
@@ -19,6 +18,8 @@ function Webdev() {
           image="/Assets/Image/Okikijesu Paul Oladimeji.jpg"
         />
       </div>
+      <Webcurriculum/>
+     
     </div>
   );
 }

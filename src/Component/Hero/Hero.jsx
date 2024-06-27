@@ -1,12 +1,12 @@
 import React from "react";
-import Tech from "../../Tech.json";
+import Tech from "../../Assets/Tech.json";
 
 import Lottie from "react-lottie";
 
 function Hero() {
   return (
     <section className="bg-yellow-500 pt-28">
-  <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+  <div className="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8 lg:py-16">
     <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
       <div className="lg:py-24">
       <h2 className="text-4xl font-bold leading-10 tracking-normal text-pretty sm:text-4xl">
@@ -61,7 +61,7 @@ export default Hero;
 
 
 <section className="bg-yellow-500 pt-28">
-<div className="flex sm:flex-col mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+<div className="flex max-w-screen-xl px-4 py-8 mx-auto sm:flex-col sm:px-6 sm:py-12 lg:px-8 lg:py-16">
   <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
     <div className="lg:py-24">
       <h2 className="text-4xl font-bold leading-10 tracking-normal text-pretty sm:text-4xl">
@@ -95,7 +95,7 @@ export default Hero;
       height={500}
       width={500}
       animationData={Tech}
-      className="absolute inset-0 h-full w-full object-cover"
+      className="absolute inset-0 object-cover w-full h-full"
     />
   </div>
 </div>
