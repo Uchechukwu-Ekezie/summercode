@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function GeneralCourse() {
   const courses = [
     {
       id: "01",
-      course: "Artifical Intelligence & Machine Learning",
+      course: "Artificial Intelligence & Machine Learning",
       pic: "/Assets/Image/web-dev.png",
       desc: "Learn how to build the server-side of web applications, work with databases, and create RESTful APIs using Node.js and Express.js.",
       path: "/courses/ai_machine",
@@ -20,28 +21,33 @@ function GeneralCourse() {
       id: "03",
       course: "Cyber Security",
       pic: "/Assets/Image/design.png",
-      desc: " ",
+      desc: "Understand the fundamental concepts of cybersecurity, learn how to protect systems and networks from cyber attacks, and gain knowledge in areas such as cryptography, network security, and ethical hacking.",
       path: "/courses/cyber-sec",
     },
     {
-        id: "04",
-        course: "Digital Media",
-        pic: "/Assets/Image/digitalmarketing.png",
-        desc: "Learn how to market products and services using digital technologies, work with social media platforms, and create online marketing campaigns.",
-        path: "/courses/uiuxdesign"
-    }
+      id: "04",
+      course: "Digital Media",
+      pic: "/Assets/Image/digitalmarketing.png",
+      desc: "Learn how to market products and services using digital technologies, work with social media platforms, and create online marketing campaigns.",
+      path: "/courses/uiuxdesign",
+    },
   ];
 
   return (
-    <div className="py-10">
+    <div className="py-10 bg-[#ffffff]">
       <div className="container px-4 mx-auto my-10">
-        <h1 className="text-4xl font-bold text-center">Our Courses</h1>
+        <h1 className="text-4xl font-bold text-center">Courses We Offer</h1>
         <p className="mt-2 text-center text-gray-500">
-          Choose the course that best suits you
+          We are committed to giving students access to amazing, quality and
+          cutting-edge tech skills that will help secure their place in the
+          future, regardless of their career paths.
         </p>
-        <div className="grid gap-6 mt-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="grid gap-6 mt-10 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
           {courses.map((course) => (
-            <div key={course.id} className="flex flex-col overflow-hidden bg-white rounded-lg shadow-md">
+            <div
+              key={course.id}
+              className="flex flex-col overflow-hidden  bg-white rounded-lg shadow-md  transition rounded-lg shadow-xl  hover:border-white hover:shadow-[#212C58]"
+            >
               <div className="relative overflow-hidden">
                 <img
                   src={course.pic}
@@ -54,12 +60,12 @@ function GeneralCourse() {
                 <p className="mt-2 text-gray-700">{course.desc}</p>
               </div>
               <div className="p-6 pt-0">
-                <a
-                  href={course.path}
-                  className="block w-full px-4 py-2 text-center text-white transition-all bg-yellow-500 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-400"
+                <Link
+                  to={course.path}
+                  className="block w-full px-4 py-2 text-center text-white transition-all bg-[#48758E] rounded-lg hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-400"
                 >
                   View Course
-                </a>
+                </Link>
               </div>
             </div>
           ))}

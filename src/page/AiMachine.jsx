@@ -2,10 +2,13 @@ import React from "react";
 import UserProfileCard from "../Component/Card/Profilecard";
 import AiMeant from "../Component/CourseSelect/AIMACHINE/AiMeant";
 import Aiend from "../Component/CourseSelect/AIMACHINE/Aiend";
+import AICurriculum from "../Component/CourseSelect/AIMACHINE/AiCurriculum";
+import AIHero from "../Component/CourseSelect/AIMACHINE/AiMachine";
 
 function AiMachine() {
   return (
-    <div className="pt-36">
+    <div className="">
+      <AIHero/>
       <AiMeant/>
       <UserProfileCard
         name="Mbowhen Priscilla James"
@@ -13,6 +16,7 @@ function AiMachine() {
         role="AI specialist"
         image="/Assets/Image/Mbowhen Priscilla Jame .JPEG.png"
       />
+      <AICurriculum/>
       <Aiend/>
     </div>
   );
