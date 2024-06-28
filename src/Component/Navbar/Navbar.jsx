@@ -18,8 +18,8 @@ function Navigation({ Enroll }) {
   ];
 
   return (
-    <header className="fixed z-50 w-full bg-yellow-500 shadow-md ">
-      <div className="container flex items-center justify-between mx-auto my-2 md:px-6 sm:px-3">
+    <header className="fixed z-50 w-full shadow-md bg-[#48578E] ">
+      <div className="container flex items-center justify-between mx-auto my-2 md:px-6">
         <Link to="/" className="flex items-center">
           <img
             src="/Assets/Image/Colorful_Brain_Human_Technology_Logo-removebg-preview.png"
@@ -45,8 +45,8 @@ function Navigation({ Enroll }) {
         <nav
           className={`${
             isOpen ? "translate-y-0" : "translate-y-full"
-          } `}
-        id="navitem">
+          } fixed top-10 right-0 w-2/4 h-full bg-[#48578E] transition-transform duration-300 ease-in-out md:static md:flex md:w-auto md:h-auto md:bg-transparent md:translate-x-0`}
+        >
           <ul className="flex flex-col items-start justify-center h-full p-6 space-y-6 md:flex-row md:space-y-0 md:space-x-8 md:p-0">
             {navItems.map((item) => (
               <li key={item.id} className="md:border-none">

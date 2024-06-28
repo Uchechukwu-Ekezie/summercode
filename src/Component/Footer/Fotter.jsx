@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-yellow-500 lg:grid lg:grid-cols-5">
+    <footer className="bg-[#48578E] lg:grid lg:grid-cols-5">
       <div className="relative block h-32 lg:col-span-2 lg:h-full">
         <img
           src="/Assets/Image/footerimg.jpg"
@@ -17,13 +17,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
           <div>
             <p>
-              <span className="text-xs tracking-wide text-gray-500 uppercase">Call us</span>
-              <a href="#" className="block text-2xl font-medium text-gray-900 hover:opacity-75 sm:text-3xl">
+              <span className="text-xs tracking-wide text-white uppercase">Call us</span>
+              <a href="#" className="block text-2xl font-medium text-white hover:opacity-75 sm:text-3xl">
                 0916168411
               </a>
             </p>
 
-            <ul className="mt-8 space-y-1 text-sm text-gray-700">
+            <ul className="mt-8 space-y-1 text-sm text-white">
               <li>Monday to Friday: 10am - 5pm</li>
               <li>Weekend: 10am - 3pm</li>
             </ul>
@@ -34,7 +34,7 @@ const Footer = () => {
                   href="/"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 transition hover:opacity-75"
+                  className="text-white transition hover:opacity-75"
                 >
                   <FaFacebook className="w-6 h-6" />
                 </a>
@@ -45,7 +45,7 @@ const Footer = () => {
                   href="#"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 transition hover:opacity-75"
+                  className="text-white transition hover:opacity-75"
                 >
                   <FaInstagram className="w-6 h-6" />
                 </a>
@@ -56,7 +56,7 @@ const Footer = () => {
                   href="#"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 transition hover:opacity-75"
+                  className="text-white transition hover:opacity-75"
                 >
                   <FaTwitter className="w-6 h-6" />
                 </a>
@@ -66,30 +66,30 @@ const Footer = () => {
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div>
-              <p className="font-medium text-gray-900">Services</p>
+              <p className="font-medium text-white">Services</p>
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
-                  <Link to="#" className="text-gray-700 transition hover:opacity-75">
+                  <Link to="#" className="text-white transition hover:opacity-75">
                     1on1 Coaching
                   </Link>
                 </li>
                 <li>
-                  <Link to="#" className="text-gray-700 transition hover:opacity-75">
+                  <Link to="#" className="text-white transition hover:opacity-75">
                     Company Review
                   </Link>
                 </li>
                 <li>
-                  <Link to="#" className="text-gray-700 transition hover:opacity-75">
+                  <Link to="#" className="text-white transition hover:opacity-75">
                     Accounts Review
                   </Link>
                 </li>
                 <li>
-                  <Link to="#" className="text-gray-700 transition hover:opacity-75">
+                  <Link to="#" className="text-white transition hover:opacity-75">
                     HR Consulting
                   </Link>
                 </li>
                 <li>
-                  <Link to="#" className="text-gray-700 transition hover:opacity-75">
+                  <Link to="#" className="text-white transition hover:opacity-75">
                     SEO Optimization
                   </Link>
                 </li>
@@ -100,22 +100,22 @@ const Footer = () => {
               <p className="font-medium text-gray-900">Courses</p>
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
-                  <Link to="/courses/ai_machine" className="text-gray-700 transition hover:opacity-75">
+                  <Link to="/courses/ai_machine" className="text-white transition hover:opacity-75">
                     AI / Machine Learning
                   </Link>
                 </li>
                 <li>
-                  <Link to="/courses/webdesign" className="text-gray-700 transition hover:opacity-75">
+                  <Link to="/courses/webdesign" className="text-white transition hover:opacity-75">
                     Web Development
                   </Link>
                 </li>
                 <li>
-                  <Link to="/courses/cyber-sec" className="text-gray-700 transition hover:opacity-75">
+                  <Link to="/courses/cyber-sec" className="text-white transition hover:opacity-75">
                     Cyber Security
                   </Link>
                 </li>
                 <li>
-                  <Link to="/courses/uiuxdesign" className="text-gray-700 transition hover:opacity-75">
+                  <Link to="/courses/uiuxdesign" className="text-white transition hover:opacity-75">
                     Digital media
                   </Link>
                 </li>
