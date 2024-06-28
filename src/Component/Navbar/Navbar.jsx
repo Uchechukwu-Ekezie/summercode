@@ -45,7 +45,7 @@ function Navigation({ Enroll }) {
         <nav
           className={`${
             isOpen ? "translate-y-0" : "translate-y-full"
-          } fixed top-10 right-0 w-2/4 h-full bg-yellow-500 transition-transform duration-300 ease-in-out md:static md:flex md:w-auto md:h-auto md:bg-transparent md:translate-x-0`}
+          } `}
         id="navitem">
           <ul className="flex flex-col items-start justify-center h-full p-6 space-y-6 md:flex-row md:space-y-0 md:space-x-8 md:p-0">
             {navItems.map((item) => (
