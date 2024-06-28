@@ -10,7 +10,7 @@ function Ment({ title, description }) {
 
   return (
     <div
-      className="max-w-5xl p-5 mx-auto my-5 bg-yellow-500 rounded-lg shadow-lg"
+      className="max-w-5xl p-5 mx-auto my-5 bg-[#48758E] rounded-lg shadow-lg"
       data-aos="fade-up"
       data-aos-duration="1000"
       data-aos-easing="ease-in"
@@ -18,7 +18,7 @@ function Ment({ title, description }) {
       <h1 className="w-4/5 p-2 mx-auto mb-4 text-2xl font-bold text-center bg-white rounded-md">
         {title}
       </h1>
-      <p className="mx-5 text-base leading-relaxed text-gray-800">
+      <p className="mx-5 text-base leading-relaxed text-white ">
         {description}
       </p>
     </div>
