@@ -21,7 +21,7 @@ function Hero() {
         Obcaecati, autem.
       </p>
       <a
-        href="/"
+        href="/courses"
         className="inline-block px-12 py-3 mt-8 font-semibold transition bg-pink-500 rounded-lg textwhite botext-sm hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
       >
         Get Started Today
