@@ -1,6 +1,7 @@
 import React from "react";
 import UserProfileCard from "../Component/Card/Profilecard";
 import AiMeant from "../Component/CourseSelect/AIMACHINE/AiMeant";
+import Aiend from "../Component/CourseSelect/AIMACHINE/Aiend";
 
 function AiMachine() {
   return (
@@ -12,6 +13,7 @@ function AiMachine() {
         role="AI specialist"
         image="/Assets/Image/Mbowhen Priscilla Jame .JPEG.png"
       />
+      <Aiend/>
     </div>
   );
 }

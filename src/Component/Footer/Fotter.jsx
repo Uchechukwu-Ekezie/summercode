@@ -115,7 +115,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/courses/digital-design" className="text-gray-700 transition hover:opacity-75">
+                  <Link to="/courses/uiuxdesign" className="text-gray-700 transition hover:opacity-75">
                     Digital media
                   </Link>
                 </li>

@@ -27,7 +27,7 @@ function App() {
             <Route path="/enroll" element={<Registrationpage/>}/>
             <Route path="/courses/ai_machine" element={<AiMachine/>} />
             <Route path="/courses/uiuxdesign" element={<Uiuxdev/>} />
-            <Route path="/courses/digital-design" element={< DigitalMarketdev/>} />
+            <Route path="/courses/digitalmarket" element={<DigitalMarketdev/>}/>
             <Route path="/courses/cyber-sec" element={<Cybersec/>}/>
           </Route>
         </Routes>

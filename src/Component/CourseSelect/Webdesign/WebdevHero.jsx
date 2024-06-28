@@ -22,6 +22,7 @@ function WebdevHero() {
 
             <div class="mt-4 md:mt-8">
               <Link
+              to='/enroll'
               class="inline-block rounded bg-[#1b4344] px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400"> Get Started Today
               </Link>
             </div>

@@ -1,7 +1,6 @@
 import React from 'react'
 import Lottie from 'react-lottie'
 import { Link } from 'react-router-dom'
-import Tech from '../../../Assets/'
 
 function CyberHero() {
   return (
@@ -27,7 +26,7 @@ function CyberHero() {
         </div>
       </div>
 
-      <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+      {/* <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
         <Lottie
           options={{
             loop: true,
@@ -44,7 +43,7 @@ function CyberHero() {
             width: "100%",
           }}
         />
-      </div>
+      </div> */}
     </section>
   </div>
   )

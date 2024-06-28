@@ -1,10 +1,13 @@
 import React from 'react'
 import UserProfileCard from '../Component/Card/Profilecard'
 import CyberCurriculum from '../Component/CourseSelect/CyberSec/CyberCurric'
+import Cyberend from '../Component/CourseSelect/CyberSec/Cyberend'
+import CyberHero from '../Component/CourseSelect/CyberSec/CyberHero'
 
 function Cybersec() {
   return (
     <div className='pt-32'>
+      <CyberHero/>
       <CyberCurriculum/>
       <UserProfileCard
         name="Agba Paschal Eifowe"
@@ -13,7 +16,9 @@ function Cybersec() {
         role="Cyber Security Analyst"
         image="/Assets/Image/agbapaschal.png"
       />
+      <Cyberend/>
     </div>
+
   )
 }
 

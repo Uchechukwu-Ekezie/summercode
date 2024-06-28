@@ -3,6 +3,7 @@ import UserProfileCard from "../Component/Card/Profilecard";
 import Webcurriculum from "../Component/CourseSelect/Webdesign/Webcurriculum";
 import Webment from "../Component/CourseSelect/Webdesign/Webmeant";
 import WebdevHero from "../Component/CourseSelect/Webdesign/WebdevHero";
+import Webend from "../Component/CourseSelect/Webdesign/Webend";
 
 function Webdev() {
   return (
@@ -19,6 +20,7 @@ function Webdev() {
         />
       </div>
       <Webcurriculum/>
+      <Webend/>
      
     </div>
   );

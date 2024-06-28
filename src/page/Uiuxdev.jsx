@@ -5,6 +5,7 @@ import UserProfileCard from '../Component/Card/Profilecard'
 import UiCurriculum from '../Component/CourseSelect/Uiuxdesign/UiCurriculum';
 import UiMeant from '../Component/CourseSelect/Uiuxdesign/UiMeant';
 import UiHero from '../Component/CourseSelect/Uiuxdesign/UiHero';
+import Uiend from '../Component/CourseSelect/Uiuxdesign/Uiend';
 function Uiuxdev() {
   return (
     <div>
@@ -19,6 +20,7 @@ function Uiuxdev() {
         />
       </div>
         <UiCurriculum/>
+        <Uiend/>
        
     </div>
   )

@@ -28,7 +28,7 @@ function GeneralCourse() {
         course: "Digital Media",
         pic: "/Assets/Image/digitalmarketing.png",
         desc: "Learn how to market products and services using digital technologies, work with social media platforms, and create online marketing campaigns.",
-        path: "/courses/digital-design"
+        path: "/courses/uiuxdesign"
     }
   ];
 
