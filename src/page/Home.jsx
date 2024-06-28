@@ -3,6 +3,7 @@ import Hero from '../Component/Hero/Hero'
 import ParentTest from '../Component/Testimoial/ParentTest'
 import Banner from '../Component/Banner/Banner'
 import TechSkill from '../Component/Techskills/TechSkill'
+import WhyChooseUs from '../Component/Chooseus/WhyChoose'
 
 
 function Home() {
@@ -12,6 +13,7 @@ function Home() {
         <Banner/>
         <TechSkill/>
         <ParentTest/>
+        <WhyChooseUs/>
     </div>
   )
 }
