@@ -22,15 +22,15 @@ const Testimonials = ({ testimonials }) => {
     <section class="bg-gray-50">
   <div class="max-w-full px-4 py-12 mx-auto sm:px-6 lg:px-8 xl:py-24">
     <div class="grid gap-8 lg:grid-cols-2 lg:items-center">
-      <div class="text-center sm:text-left w-96 lg:ml-32">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+      <div class="text-center sm:text-left w-[100%] lg:ml-32">
+        <h2 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-2xl">
           Parents Love Our Program!
         </h2>
         <p class="mt-4 text-gray-700">
           This compilation features a carefully curated list of the top 10 parent reviews, providing valuable insights and perspectives on various topics.
         </p>
       </div>
-      <div class="h-full lg:max-w-96 mt-8 lg:mt-0 max-w-80 ml-7">
+      <div class="h-full lg:max-w-96 mt-8 lg:mt-0 max-w-64 ml-9">
         <Swiper
           effect={"cards"}
           grabCursor={true}
