@@ -22,11 +22,11 @@ function TechSkill() {
 
   return (
     <div>
-      <section className="py-20 text-white bg-yellow-500">
+      <section className="py-20 text-black bg-[#cdd6ec]">
         <div className="container px-4 mx-auto">
           <div className="mb-8 text-center">
             <h2 className="text-4xl font-bold">Corses We Offer</h2>
-            <p className="mx-auto text-lg font-bold mt-4 text-slate-200">
+            <p className="mx-auto mt-4 text-lg font-bold text-[#302929]">
               We are committed to giving students access to amazing, quality and
               cutting-edge tech skills that will help secure their place in the
               future, regardless of their career paths.
@@ -36,7 +36,7 @@ function TechSkill() {
             {icn.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center justify-center p-6 mx-4 mb-8 text-center transition rounded-lg shadow-xl bg-slate-700 hover:border-white hover:shadow-white"
+                className="flex flex-col items-center justify-center p-6 mx-4 mb-8 text-center transition rounded-lg shadow-xl bg-[#6171A9] hover:border-white hover:shadow-[#212C58]"
                 style={{ maxWidth: "300px" }} // Optional: Set max-width for better responsiveness
               >
                 <img

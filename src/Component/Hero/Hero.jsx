@@ -12,7 +12,7 @@ function Hero() {
       <h2 className="text-4xl font-bold leading-10 tracking-normal text-pretty sm:text-4xl">
         Give Your <span className="text-pink-500">Kids</span> the Skills to{" "}
         <br />
-        Prepare them for the <span className="bg-green-300">Future.</span>
+        Prepare them for the <span className="text-green-700">Future.</span>
       </h2>
       <p className="mt-4">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero
@@ -22,7 +22,7 @@ function Hero() {
       </p>
       <a
         href="/"
-        className="inline-block px-12 py-3 mt-8 font-bold text-white transition bg-pink-500 rounded-full botext-sm hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
+        className="inline-block px-12 py-3 mt-8 font-semibold transition bg-pink-500 rounded-lg textwhite botext-sm hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
       >
         Get Started Today
       </a>
