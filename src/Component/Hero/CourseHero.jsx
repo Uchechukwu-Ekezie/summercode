@@ -4,8 +4,8 @@ import 'aos/dist/aos.css'// Make sure to import your CSS file
 
 function CourseHero() {
   return (
-    <section className="pt-32" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in">
-      <div className="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+    <section className="pt-20 lg:pt-14"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in">
+      <div className="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8 lg:py-16 bg-[#cdd6ec]">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
           <div className="lg:py-24">
             <h2 className="text-3xl font-bold sm:text-4xl" >
@@ -22,7 +22,7 @@ function CourseHero() {
 
             <a
               href="/enroll"
-              className="inline-block px-12 py-3 mt-8 text-sm font-medium text-white transition bg-yellow-500 rounded hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
+              className="inline-block px-12 py-3 mt-8 text-sm font-semibold text-white transition bg-[#48758E] rounded hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
             >
               Register now
             </a>
