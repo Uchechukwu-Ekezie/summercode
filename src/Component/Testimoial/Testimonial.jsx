@@ -30,7 +30,7 @@ const Testimonials = ({ testimonials }) => {
           This compilation features a carefully curated list of the top 10 parent reviews, providing valuable insights and perspectives on various topics.
         </p>
       </div>
-      <div class="h-full lg:max-w-96 mt-8 lg:mt-0 max-w-80 ml-7">
+      <div class="h-full lg:max-w-96 mt-8 lg:mt-0 max-w-60 ml-7">
         <Swiper
           effect={"cards"}
           grabCursor={true}
@@ -39,7 +39,7 @@ const Testimonials = ({ testimonials }) => {
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
-              <div class={`flex flex-col items-center justify-center h-[400px]  p-4 text-center rounded-lg shadow-lg ${backgroundColors[index % backgroundColors.length]}`}>
+              <div class={`flex flex-col items-center justify-center h-[400px]   p-4 text-center rounded-lg shadow-lg ${backgroundColors[index % backgroundColors.length]}`}>
                 <p class="text-2xl font-bold text-white sm:text-3xl">
                   {testimonial.name}
                 </p>
