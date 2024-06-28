@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 function CyberHero() {
   return (
     <div className="pt-20">
-    <section class="overflow-hidden bg-yellow-500 sm:grid sm:grid-cols-2 sm:items-center ">
+    <section class="overflow-hidden bg-[#cdd6ec] sm:grid sm:grid-cols-2 sm:items-center ">
       <div class="p-8 md:p-12 lg:px-16 lg:py-24">
         <div class="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
           <h2 class="text-2xl font-bold text-black md:text-3xl ">

@@ -17,8 +17,9 @@ function Cybersec() {
         role="Cyber Security Analyst"
         image="/Assets/Image/agbapaschal.png"
       />
-      <Cyberend/>
       <CyberCurriculum/>
+      <Cyberend/>
+      
       
     </div>
 
