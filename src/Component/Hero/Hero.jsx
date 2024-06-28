@@ -5,12 +5,12 @@ import Lottie from "react-lottie";
 
 function Hero() {
   return (
-    <section className="bg-yellow-500 pt-28">
+    <section className="bg-[#cdd6ec] pt-28">
   <div className="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8 lg:py-16">
     <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
       <div className="lg:py-24">
       <h2 className="text-4xl font-bold leading-10 tracking-normal text-pretty sm:text-4xl">
-        Give Your <span className="bg-pink-400">Kids</span> the Skills to{" "}
+        Give Your <span className="text-pink-500">Kids</span> the Skills to{" "}
         <br />
         Prepare them for the <span className="bg-green-300">Future.</span>
       </h2>
