@@ -1,4 +1,5 @@
 import React from "react";
+import Tech from "../../../Assets/aimachine.json";
 
 import Lottie from "react-lottie";
 import { Link } from "react-router-dom";
@@ -30,15 +31,16 @@ function AIHero() {
           </div>
         </div>
 
-        {/* <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+        <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
           <Lottie
             options={{
               loop: true,
               autoplay: true,
-              animationData: AIAnimation,
+              animationData: Tech,
             }}
             height={350}
             width={600}
+            animationData={Tech}
             style={{
               position: "absolute",
               inset: 0,
@@ -46,7 +48,7 @@ function AIHero() {
               width: "100%",
             }}
           />
-        </div> */}
+        </div>
       </section>
     </div>
   );

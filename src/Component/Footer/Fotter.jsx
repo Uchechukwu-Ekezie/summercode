@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaFacebook, FaHome, FaInstagram, FaPhone, FaPhoneAlt, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -17,10 +17,15 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
           <div>
             <p>
-              <span className="text-xs tracking-wide text-white uppercase">Call us</span>
-              <a href="#" className="block text-2xl font-medium text-white hover:opacity-75 sm:text-3xl">
-                0916168411
-              </a>
+              <span className="text-2xl font-medium tracking-wide text-white uppercase">Contact Us</span>
+              <div className='flex items-center gap-4 mt-4 font-normal hover:opacity-75' >
+              <p className='text-xl text-white lg:text-lg'><FaHome/></p>
+              <span className='text-lg text-white lg:text-xl'>No 8 Alexander crescent <br /> Aminu Kanu wuse 2</span>
+              </div>
+              <div className='flex items-center gap-4 mt-4 font-normal hover:opacity-75'>
+              <p className='text-xl text-white lg:text-2xl'><FaPhoneAlt/></p>
+              <span className='text-lg text-white lg:text-xl'>+234 916168411</span>
+              </div>
             </p>
 
             <ul className="mt-8 space-y-1 text-sm text-white">
@@ -28,7 +33,7 @@ const Footer = () => {
               <li>Weekend: 10am - 3pm</li>
             </ul>
 
-            <ul className="flex justify-center gap-6 mt-8">
+            <ul className="flex gap-6 mt-8">
               <li>
                 <a
                   href="/"
@@ -42,7 +47,7 @@ const Footer = () => {
 
               <li>
                 <a
-                  href="#"
+                  href="/"
                   rel="noreferrer"
                   target="_blank"
                   className="text-white transition hover:opacity-75"

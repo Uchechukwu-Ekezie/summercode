@@ -20,7 +20,7 @@ function WhyChooseUs() {
           <img src={Image} alt="Coding class" className="object-cover w-full h-full rounded-lg" />
         </div>
         <div className="text-center sm:text-left">
-          <h2 className="text-sm font-bold text-red-600">Why Choose Us</h2>
+          <h2 className="text-3xl font-bold text-[#48758E]">Why Choose Us</h2>
           <h2 className="mt-2 text-3xl font-bold text-gray-900 md:text-4xl">
             Discover the Best Online Coding Bootcamp for Kids
           </h2>
@@ -30,7 +30,7 @@ function WhyChooseUs() {
           <div className="mt-6 space-y-4">
             {features.map((feature, index) => (
               <div key={index} className="flex items-center justify-center space-x-3 sm:justify-start">
-                <FontAwesomeIcon icon={feature.icon} className="w-6 h-6 text-red-600" />
+                <FontAwesomeIcon icon={feature.icon} className="w-6 h-6 text-[#48758E]" />
                 <span className="font-semibold text-gray-800">{feature.title}</span>
               </div>
             ))}

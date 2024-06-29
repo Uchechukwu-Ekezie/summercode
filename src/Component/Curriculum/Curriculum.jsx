@@ -16,7 +16,7 @@ const Curriculum = ({ faqs }) => {
     data-aos-easing="ease-in">
       <h1 className="mb-8 text-4xl font-semibold text-center ">Course Curriculm</h1>
       {faqs.map((faq, index) => (
-        <div key={index} className="w-3/5 mx-auto mb-4">
+        <div key={index} className="w-4/5 mx-auto mb-4">
           <button
             onClick={() => toggleAnswer(index)}
             className="flex items-center justify-between w-full p-4 pb-5 text-xl text-white bg-slate-500"
