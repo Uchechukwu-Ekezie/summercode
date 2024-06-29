@@ -56,7 +56,14 @@ function GeneralCourse() {
                 />
               </div>
               <div className="flex-1 p-6">
-                <h2 className="text-xl font-semibold">{course.course}</h2>
+                <h2 className="mb-3 text-xl font-semibold">{course.course}</h2>
+                <h2 className="font-semibold text-[17px]"><span style={{textDecoration: "line-through",
+                                  color: "red",
+                                  fontStyle: "italic",
+                                  marginRight: "10px"
+                }}>₦100,000</span> <span 
+                >
+                  ₦50,000</span></h2>
                 <p className="mt-2 text-gray-700">{course.desc}</p>
               </div>
               <div className="p-6 pt-0">

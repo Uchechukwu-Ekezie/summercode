@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaFacebook, FaHome, FaInstagram, FaPhone, FaPhoneAlt, FaTwitter } from 'react-icons/fa';
+import { FaFacebook, FaHome, FaInstagram, FaPhone, FaPhoneAlt, FaTwitter, FaWhatsapp } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -22,10 +22,7 @@ const Footer = () => {
               <p className='text-xl text-white lg:text-lg'><FaHome/></p>
               <span className='text-lg text-white lg:text-xl'>No 8 Alexander crescent <br /> Aminu Kanu wuse 2</span>
               </div>
-              <div className='flex items-center gap-4 mt-4 font-normal hover:opacity-75'>
-              <p className='text-xl text-white lg:text-2xl'><FaPhoneAlt/></p>
-              <span className='text-lg text-white lg:text-xl'>+234 916168411</span>
-              </div>
+              
             </p>
 
             <ul className="mt-8 space-y-1 text-sm text-white">
@@ -33,40 +30,21 @@ const Footer = () => {
               <li>Weekend: 10am - 3pm</li>
             </ul>
 
-            <ul className="flex gap-6 mt-8">
-              <li>
-                <a
-                  href="/"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="text-white transition hover:opacity-75"
-                >
-                  <FaFacebook className="w-6 h-6" />
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="/"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="text-white transition hover:opacity-75"
-                >
-                  <FaInstagram className="w-6 h-6" />
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="text-white transition hover:opacity-75"
-                >
-                  <FaTwitter className="w-6 h-6" />
-                </a>
-              </li>
-            </ul>
+            <div className='flex items-center gap-5 mt-8 text-white'>
+              <Link to='https://www.facebook.com/profile.php?id=61561607698897&mibextid=LQQJ4d'>
+                <FaFacebook className='text-2xl'/>
+              </Link>
+              <Link to='https://wa.me/message/QY3F7BI5YPQON1'>
+                <FaWhatsapp className='text-2xl'/>
+              </Link>
+              <Link to='https://x.com/glitz_tutors?s=11'>
+                <FaTwitter className='text-2xl'/>
+              </Link>
+              <Link to='tel:+2347063284878'>
+                <FaPhoneAlt className='text-2xl'/>
+              </Link>
+            </div>
+      
           </div>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
