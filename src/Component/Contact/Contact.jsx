@@ -1,12 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { FaFacebook, FaPhoneAlt, FaTwitter, FaWhatsapp } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 function Contacts() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.id]: e.target.value,
+    });
+  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post('http://localhost:3001/send', formData);
+      alert(response.data);
+    } catch (error) {
+      alert('Failed to send message, please try again.');
+    }
+  };
+
   return (
     <section className="pt-24 text-white bg-white" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in">
       <div className="max-w-screen-xl px-4 mx-auto py-14 sm:px-6 lg:px-8">
-        <h1 className="mb-6 text-2xl font-bold text-center text-yellow-500">Fill the form below to contact us!</h1>
+        <h1 className="mb-6 text-2xl font-bold text-center text-black">Fill the form below to contact us!</h1>
         <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
-          <div className="p-8 bg-yellow-500 rounded-md lg:col-span-2 lg:py-12">
+          <div className="p-8 bg-[#48758E] rounded-md lg:col-span-2 lg:py-12">
             <h1 className="mb-4 text-3xl font-extrabold">
               Let us know how we can help you!
             </h1>
@@ -14,9 +41,23 @@ function Contacts() {
               Our fun and interactive bootcamp sparks creativity, teaches coding basics, and introduces the kids to cutting edge technology in a supportive environment!
             </p>
             <h2 className="mt-6 text-xl font-bold">Contact us today for any enquiries!</h2>
+            <div className='flex items-center justify-center gap-5 mt-8'>
+              <Link to='https://www.facebook.com/profile.php?id=61561607698897&mibextid=LQQJ4d'>
+                <FaFacebook className='text-2xl'/>
+              </Link>
+              <Link to='https://wa.me/message/QY3F7BI5YPQON1'>
+                <FaWhatsapp className='text-2xl'/>
+              </Link>
+              <Link to='https://x.com/glitz_tutors?s=11'>
+                <FaTwitter className='text-2xl'/>
+              </Link>
+              <Link to='tel:+2347063284878'>
+                <FaPhoneAlt className='text-2xl'/>
+              </Link>
+            </div>
           </div>
           <div className="p-8 bg-gray-800 rounded-lg shadow-lg lg:col-span-3 lg:p-12">
-            <form action="#" className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label className="sr-only" htmlFor="name">Name</label>
                 <input
@@ -24,6 +65,8 @@ function Contacts() {
                   placeholder="Name"
                   type="text"
                   id="name"
+                  value={formData.name}
+                  onChange={handleChange}
                 />
               </div>
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -34,6 +77,8 @@ function Contacts() {
                     placeholder="Email address"
                     type="email"
                     id="email"
+                    value={formData.email}
+                    onChange={handleChange}
                   />
                 </div>
                 <div>
@@ -43,6 +88,8 @@ function Contacts() {
                     placeholder="Phone Number"
                     type="tel"
                     id="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
                   />
                 </div>
               </div>
@@ -53,6 +100,8 @@ function Contacts() {
                   placeholder="Message"
                   rows="8"
                   id="message"
+                  value={formData.message}
+                  onChange={handleChange}
                 ></textarea>
               </div>
               <div className="mt-6">
