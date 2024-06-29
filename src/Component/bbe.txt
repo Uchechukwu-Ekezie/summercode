@@ -1,0 +1,45 @@
+<section className="flex bg-gray-50">
+      <div className="grid max-w-full px-4 py-12 m-auto sm:px-6 lg:px-8 xl:py-24">
+        <div className="flex gap-4 lg:items-center lg:gap-16">
+          <div className="text-center sm:text-left w-96 sm: ">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Parents Love Our Program!
+            </h2>
+            <p className="mt-4 text-gray-700">
+              This compilation features a carefully curated list of the top 10
+              parent reviews, providing valuable insights and perspectives on
+              various topics.
+            </p>
+          </div>
+          <div className="h-full max-w-96 lg:col-span-2">
+            <Swiper
+              effect={"cards"}
+              grabCursor={true}
+              modules={[EffectCards]}
+              className="mySwiper"
+            >
+              {testimonials.map((testimonial, index) => (
+                <SwiperSlide key={index}>
+                  <div className={`flex flex-col items-center justify-center  h-[400px]  p-4 text-center rounded-lg shadow-lg ${backgroundColors[index % backgroundColors.length]}`}>
+                    <p className="text-2xl font-bold text-left text-white sm:text-3xl">
+                      {testimonial.name}
+                    </p>
+                    {Array.isArray(testimonial.testimonial) ? (
+                      testimonial.testimonial.map((text, i) => (
+                        <p key={i} className="mt-4 text-white">
+                          {text}
+                        </p>
+                      ))
+                    ) : (
+                      <p className="mt-4 text-white">
+                        {testimonial.testimonial}
+                      </p>
+                    )}
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+      </div>
+    </section>
