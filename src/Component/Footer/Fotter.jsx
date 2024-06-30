@@ -20,24 +20,24 @@ const Footer = () => {
               <span className="text-2xl font-medium tracking-wide text-white uppercase">Contact Us</span>
               <div className='flex items-center gap-4 mt-4 font-normal hover:opacity-75' >
               <p className='text-xl text-white lg:text-lg'><FaHome/></p>
-              <span className='text-lg text-white lg:text-xl'>No 8 Alexander crescent <br /> Aminu Kanu wuse 2</span>
+              <span className='text-xl text-white lg:text-xl'>No 8 Alexander crescent <br /> Aminu Kanu wuse 2</span>
               </div>
               <div className='font-medium text-white'>
               <Link to='tel:+2349036614542'>
                 <div className='flex items-center gap-3 mt-3 mb-3'>
-                  <p  className='p-2 border-2 border-white'><FaPhoneAlt className='text-2xl'/></p>
+                  <p  className='p-1 border-2 border-white rounded-md'><FaPhoneAlt className='text-xl'/></p>
                   <p>+2349036614542</p>
                 </div>
               </Link>
               <Link to='tel:+2349161684111'>
                 <div className='flex items-center gap-3 mb-3'>
-                  <p  className='p-2 border-2 border-white'><FaPhoneAlt className='text-2xl'/></p>
+                  <p  className='p-1 border-2 border-white rounded-md'><FaPhoneAlt className='text-xl'/></p>
                   <p>+2349161684111</p>
                 </div>
               </Link>
               <Link to='tel:+2347059723519'>
                 <div className='flex items-center gap-3 mb-3'>
-                  <p  className='p-2 border-2 border-white'><FaPhoneAlt className='text-2xl '/></p>
+                  <p  className='p-1 border-2 border-white rounded-md'><FaPhoneAlt className='text-xl '/></p>
                   <p className='text-balance'>+2347059723519</p>
                 </div>
               </Link>
@@ -50,15 +50,15 @@ const Footer = () => {
               <li>Weekend: 10am - 3pm</li>
             </ul>
             <p className='mt-8 mb-4 text-xl font-semibold text-white'>Follow Us</p>
-            <div className='flex items-center gap-5 text-white'>
-              <Link to='https://www.facebook.com/profile.php?id=61561607698897&mibextid=LQQJ4d' className='p-2 border-2 border-white'>
-                <FaFacebook className='text-2xl'/>
+            <div className='flex items-center gap-5 text-white '>
+              <Link to='https://www.facebook.com/profile.php?id=61561607698897&mibextid=LQQJ4d' className='p-2 border-2 border-white rounded-md'>
+                <FaFacebook className='text-xl'/>
               </Link>
-              <Link to='https://wa.me/message/QY3F7BI5YPQON1' className='p-2 border-2 border-white'>
-                <FaWhatsapp className='text-2xl'/>
+              <Link to='https://wa.me/message/QY3F7BI5YPQON1' className='p-2 border-2 border-white rounded-md'>
+                <FaWhatsapp className='text-xl'/>
               </Link> 
-              <Link to='https://x.com/glitz_tutors?s=11' className='p-2 border-2 border-white'>
-                <FaTwitter className='text-2xl'/>
+              <Link to='https://x.com/glitz_tutors?s=11' className='p-2 border-2 border-white rounded-md'>
+                <FaTwitter className='text-xl'/>
               </Link>
             </div>
       
