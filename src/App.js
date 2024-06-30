@@ -12,6 +12,7 @@ import DigitalMarketdev from './page/DigitalMarketdev';
 import Cybersec from './page/Cybersec';
 import AiMachine from './page/AiMachine';
 import ScrollToTop from './ScrollToTop';
+import WhatsAppIcon from './Component/Whatsapp/Whatsapp';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             <Route path="/courses/cyber-sec" element={<Cybersec/>}/>
           </Route>
         </Routes>
+        <WhatsAppIcon/>
       </Router>
     </div>
   );
