@@ -6,23 +6,27 @@ function TechSkill() {
     {
       name: "Artificial Intelligence & Machine Learning",
       img: "/Assets/Image/programmer.png",
-      path: "/courses/ai_machine"
+      path: "/courses/ai_machine",
+      desc: "Dive into the world of Artificial Intelligence and Machine Learning, exploring algorithms, neural networks."
     },
     {
       name: "Web Development",
       img: "/Assets/Image/web-dev.png",
-      path: "/courses/webdesign"
+      path: "/courses/webdesign",
+      desc: "Learn the fundamentals of Web Development, from HTML, CSS, and JavaScript to advanced frameworks like React and Angular."
     },
     {
       name: "Cyber Security",
       img: "/Assets/Image/app-development.png",
-      path: "/courses/cyber-sec"
+      path: "/courses/cyber-sec",
+      desc: "Master the essentials of Cyber Security, including ethical hacking, penetration testing, and digital forensics."
     },
     {
       name: "Digital Media",
       img: "/Assets/Image/analysis.png",
-      path: "/courses/uiuxdesign"
-    },
+      path: "/courses/uiuxdesign",
+      desc: "Explore the creative and technical aspects of Digital Media, covering topics like graphic design, video production, and UI/UX design."
+    }
   ];
 
   return (
@@ -51,7 +55,7 @@ function TechSkill() {
                   />
                   <h3 className="mb-2 text-xl font-bold">{item.name}</h3>
                   <p className="text-slate-200">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    {item.desc ? item.desc : "Learn More"}
                   </p>
                 </div>
               </Link>

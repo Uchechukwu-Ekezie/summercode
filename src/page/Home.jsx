@@ -5,6 +5,7 @@ import Banner from '../Component/Banner/Banner'
 import TechSkill from '../Component/Techskills/TechSkill'
 
 import CourseChoose from '../Component/Chooseus/CourseChoose'
+import OnlineClassInfo from '../Component/OnlineClassInfo/OnlineClassInfo'
 
 
 function Home() {
@@ -13,9 +14,10 @@ function Home() {
         <Hero/>
         <Banner/>
         <TechSkill/>
+        <OnlineClassInfo/>
         <ParentTest/>
-
         <CourseChoose/>
+
     </div>
   )
 }

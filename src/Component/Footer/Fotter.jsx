@@ -22,6 +22,26 @@ const Footer = () => {
               <p className='text-xl text-white lg:text-lg'><FaHome/></p>
               <span className='text-lg text-white lg:text-xl'>No 8 Alexander crescent <br /> Aminu Kanu wuse 2</span>
               </div>
+              <div className='font-medium text-white'>
+              <Link to='tel:+2349036614542'>
+                <div className='flex items-center gap-3 mt-3 mb-3'>
+                  <p  className='p-2 border-2 border-white'><FaPhoneAlt className='text-2xl'/></p>
+                  <p>+2349036614542</p>
+                </div>
+              </Link>
+              <Link to='tel:+2349161684111'>
+                <div className='flex items-center gap-3 mb-3'>
+                  <p  className='p-2 border-2 border-white'><FaPhoneAlt className='text-2xl'/></p>
+                  <p>+2349161684111</p>
+                </div>
+              </Link>
+              <Link to='tel:+2347059723519'>
+                <div className='flex items-center gap-3 mb-3'>
+                  <p  className='p-2 border-2 border-white'><FaPhoneAlt className='text-2xl '/></p>
+                  <p className='text-balance'>+2347059723519</p>
+                </div>
+              </Link>
+              </div>
               
             </p>
 
@@ -29,19 +49,16 @@ const Footer = () => {
               <li>Monday to Friday: 10am - 5pm</li>
               <li>Weekend: 10am - 3pm</li>
             </ul>
-
-            <div className='flex items-center gap-5 mt-8 text-white'>
-              <Link to='https://www.facebook.com/profile.php?id=61561607698897&mibextid=LQQJ4d'>
+            <p className='mt-8 mb-4 text-xl font-semibold text-white'>Follow Us</p>
+            <div className='flex items-center gap-5 text-white'>
+              <Link to='https://www.facebook.com/profile.php?id=61561607698897&mibextid=LQQJ4d' className='p-2 border-2 border-white'>
                 <FaFacebook className='text-2xl'/>
               </Link>
-              <Link to='https://wa.me/message/QY3F7BI5YPQON1'>
+              <Link to='https://wa.me/message/QY3F7BI5YPQON1' className='p-2 border-2 border-white'>
                 <FaWhatsapp className='text-2xl'/>
-              </Link>
-              <Link to='https://x.com/glitz_tutors?s=11'>
+              </Link> 
+              <Link to='https://x.com/glitz_tutors?s=11' className='p-2 border-2 border-white'>
                 <FaTwitter className='text-2xl'/>
-              </Link>
-              <Link to='tel:+2347063284878'>
-                <FaPhoneAlt className='text-2xl'/>
               </Link>
             </div>
       
@@ -107,32 +124,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="pt-12 mt-12 border-t border-gray-100">
-          <div className="sm:flex sm:items-center sm:justify-between">
-            <ul className="flex flex-wrap gap-4 text-xs">
-              <li>
-                <Link to="#" className="text-gray-500 transition hover:opacity-75">
-                  Terms & Conditions
-                </Link>
-              </li>
-              <li>
-                <Link to="#" className="text-gray-500 transition hover:opacity-75">
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link to="#" className="text-gray-500 transition hover:opacity-75">
-                  Cookies
-                </Link>
-              </li>
-            </ul>
 
-            <p className="mt-8 text-xs text-gray-500 sm:mt-0">
-              &copy; 2022. Company Name. All rights reserved.
-            </p>
-          </div>
         </div>
-      </div>
+    
     </footer>
   );
 };

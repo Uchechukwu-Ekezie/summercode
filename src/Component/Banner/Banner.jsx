@@ -20,10 +20,10 @@ function Banner() {
           {/* Content Section */}
           <div className="flex flex-col justify-center p-8 bg-white rounded-lg shadow-lg sm:p-16 lg:p-24">
             <h2 className="mb-4 text-2xl font-bold text-gray-800 sm:text-3xl">
-              🚀 Bootcamp Registration Countdown! 🚀
+              🚀 Summer Training Registration Countdown! 🚀
             </h2>
             <p className="mb-8 text-gray-600">
-              Are you ready to take the next step in your tech career? Our bootcamp is the perfect opportunity to learn, grow, and excel in your chosen field.
+              Are you ready to take the next step in your tech career? Our training is the perfect opportunity to learn, grow, and excel in your chosen field.
             </p>
             <p className="mb-8 text-xl font-semibold text-gray-800">
               ⏳ Registration Opens In: <CountDown />
