@@ -21,7 +21,7 @@ const RegistrationForm = () => {
 
   return (
     <div className="p-4">
-      <h1 className="mb-8 text-3xl font-extrabold text-center text-[#48758E]">
+      <h1 className="mb-8 text-2xl font-extrabold text-center text-[#48758E]">
         Enroll Now Using Gmail
       </h1>
       <div className="max-w-lg mx-auto overflow-hidden bg-white rounded-lg shadow-md">
