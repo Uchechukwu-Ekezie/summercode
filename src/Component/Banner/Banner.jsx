@@ -11,7 +11,6 @@ function Banner() {
           {/* Video Section */}
           <div className="relative h-[35rem] lg:h-full">
             <video
-            controls
               autoPlay
               muted
               alt="Tech Event"
@@ -26,7 +25,9 @@ function Banner() {
               🚀 Summer Training Registration Countdown! 🚀
             </h2>
             <p className="mb-8 text-gray-600">
-              Are you ready to take the next step in your tech career? Our training is the perfect opportunity to learn, grow, and excel in your chosen field.
+              Are you ready to take the next step in your tech career? Our
+              training is the perfect opportunity to learn, grow, and excel in
+              your chosen field.
             </p>
             <p className="mb-8 text-xl font-semibold text-gray-800">
               ⏳ Registration Closes In: <CountDown />
@@ -42,7 +43,8 @@ function Banner() {
                       50% Discount on All Courses!
                     </h2>
                     <p className="mt-2 text-lg">
-                      Summer special offer! Enroll now and enjoy a massive 50% discount on all our courses.
+                      Summer special offer! Enroll now and enjoy a massive 50%
+                      discount on all our courses.
                     </p>
                   </div>
                 </div>
