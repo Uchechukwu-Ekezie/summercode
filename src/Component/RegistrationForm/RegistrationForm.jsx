@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from 'react';
 
 const RegistrationForm = () => {
+  const [numChildren, setNumChildren] = useState(0);
+
+  const handleChildrenChange = (e) => {
+    setNumChildren(Number(e.target.value));
+  };
+
   return (
     <div className="p-4">
-      <h1 className="mb-8 text-3xl font-extrabold text-center text-[#48758E] ">
+      <h1 className="mb-8 text-3xl font-extrabold text-center text-[#48758E]">
         Enroll Now
       </h1>
       <div className="max-w-lg mx-auto overflow-hidden bg-white rounded-lg shadow-md">
@@ -51,6 +57,7 @@ const RegistrationForm = () => {
               <select
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="children"
+                onChange={handleChildrenChange}
                 required
               >
                 <option value="">How many children are you enrolling?</option>
@@ -62,22 +69,51 @@ const RegistrationForm = () => {
               </select>
             </div>
 
-            <div className="mb-6">
-              <label
-                htmlFor="fullName"
-                className="block text-gray-700 text-sm font-bold mb-2"
-              >
-                Child Full Name
-              </label>
-              <input
-                type="text"
-                id="fullName"
-                name="fullName"
-                placeholder="Enter your child full name"
-                className="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm"
-                required
-              />
-            </div>
+            {Array.from({ length: numChildren }, (_, index) => (
+              <div key={index}>
+                <div className="mb-6">
+                  <label
+                    htmlFor={`childFullName${index}`}
+                    className="block text-gray-700 text-sm font-bold mb-2"
+                  >
+                    Child {index + 1} Full Name
+                  </label>
+                  <input
+                    type="text"
+                    id={`childFullName${index}`}
+                    name={`childFullName${index}`}
+                    placeholder="Enter your child's full name"
+                    className="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm"
+                    required
+                  />
+                </div>
+                <div className="mb-6">
+                  <label
+                    htmlFor={`childCourse${index}`}
+                    className="block text-gray-700 text-sm font-bold mb-2"
+                  >
+                    Child {index + 1} Course
+                  </label>
+                  <select
+                    id={`childCourse${index}`}
+                    name={`childCourse${index}`}
+                    className="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm"
+                    required
+                  >
+                    <option value="">Select a course</option>
+                    <option value="webdev">
+                      Web Development with HTML, CSS, and JavaScript
+                    </option>
+                    <option value="dataanalysis">Digital Media</option>
+                    <option value="machinelearning">
+                      AI & Machine Learning
+                    </option>
+                    <option value="cybersecurity">Cybersecurity </option>
+                  </select>
+                </div>
+              </div>
+            ))}
+
             <div className="mb-6">
               <label
                 htmlFor="email"
@@ -94,28 +130,7 @@ const RegistrationForm = () => {
                 required
               />
             </div>
-            <div className="mb-6">
-              <label
-                htmlFor="course"
-                className="block text-gray-700 text-sm font-bold mb-2"
-              >
-                Select Course
-              </label>
-              <select
-                id="course"
-                name="course"
-                className="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm"
-                required
-              >
-                <option value="">Select a course</option>
-                <option value="webdev">
-                  Web Development with HTML, CSS, and JavaScript
-                </option>
-                <option value="dataanalysis">Digital Media</option>
-                <option value="machinelearning">AI & Machine Learning</option>
-                <option value="cybersecurity">Cybersecurity </option>
-              </select>
-            </div>
+
             <div className="mb-6">
               <label
                 htmlFor="message"
@@ -131,10 +146,11 @@ const RegistrationForm = () => {
                 className="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm"
               ></textarea>
             </div>
+
             <div className="flex items-center justify-center">
               <button
                 type="submit"
-                className="inline-block px-6 py-3 font-bold text-white bg-[#48758E]  rounded-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50"
+                className="inline-block px-6 py-3 font-bold text-white bg-[#48758E] rounded-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50"
               >
                 Enroll Now
               </button>
