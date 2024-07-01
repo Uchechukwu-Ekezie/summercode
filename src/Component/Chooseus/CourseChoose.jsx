@@ -4,8 +4,10 @@ import {
   FaFolderOpen,
   FaShieldAlt,
   FaTag,
-  FaUserShield,
+  
   FaRobot,
+  FaCertificate,
+  FaHandsHelping,
 } from "react-icons/fa";
 import { FaMedal } from "react-icons/fa6";
 
@@ -26,11 +28,11 @@ function CourseChoose() {
       title: "Best Price Offer",
       desc: "Quality education shouldn't break the bank. We offer competitive rates without compromising on excellence.",
     },
-    // {
-    //   icon: <FaUserShield />,
-    //   title: "Expert Mentors",
-    //   desc: "Our tutors are highly qualified professionals with expertise in their respective fields, ensuring top-notch learning experiences.",
-    // },
+    {
+      icon: <FaHandsHelping />,
+      title: "Post Program Mentorship",
+      desc: "We will not leave your children hanging. Our tutors will follow up on your children’s progress after the summer.",
+    },
     {
       icon: <FaClock />,
       title: "Flexible Schedules",
@@ -45,6 +47,12 @@ function CourseChoose() {
       icon: <FaRobot />,
       title: "Technology-Driven",
       desc: "We leverage the latest technology to provide an engaging and effective learning experience for your child.",
+    },
+   
+    {
+      icon: <FaCertificate />,
+      title: "Verified Certifications",
+      desc: "Certificates will be handed out to students at the end of the tech summer training.",
     },
   ];
 

@@ -15,11 +15,11 @@ function Home() {
     <div data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in">
         <Hero/>
         <Banner/>
+        <CourseChoose/>
         <TechSkill/>
         <SummerCamp/>
         <OnlineClassInfo/>
         <ParentTest/>
-        <CourseChoose/>
         <Sponsor/>
 
     </div>

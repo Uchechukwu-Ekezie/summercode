@@ -8,11 +8,13 @@ function Banner() {
     <section className="py-16 bg-gray-100">
       <div className="px-4 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
         <div className="grid items-center grid-cols-1 gap-8 lg:grid-cols-2">
-          {/* Image Section */}
-          <div className="relative h-full lg:h-full">
-            <img
+          {/* Video Section */}
+          <div className="relative h-[35rem] lg:h-full">
+            <video
+              autoPlay
+              muted
               alt="Tech Event"
-              src="/Assets/Image/Layer 1.png"
+              src="/Assets/video/Glitzbanner.mp4"
               className="absolute inset-0 object-cover w-full h-full rounded-lg shadow-lg"
             />
           </div>
@@ -26,11 +28,11 @@ function Banner() {
               Are you ready to take the next step in your tech career? Our training is the perfect opportunity to learn, grow, and excel in your chosen field.
             </p>
             <p className="mb-8 text-xl font-semibold text-gray-800">
-              ⏳ Registration Closes On: <CountDown />
+              ⏳ Registration Closes In: <CountDown />
             </p>
 
             {/* Discount Section */}
-            <div className="px-6 py-8 text-slate-200 bg-[#48758E]  rounded-lg shadow-lg">
+            <div className="px-6 py-8 text-slate-200 bg-[#48758E] rounded-lg shadow-lg">
               <div className="flex flex-col items-center justify-between lg:flex-col">
                 <div className="flex items-center mb-4 space-x-4 lg:mb-0">
                   <FaPercentage className="text-5xl text-white" />
@@ -45,7 +47,7 @@ function Banner() {
                 </div>
                 <Link
                   to="/enroll"
-                  className="inline-block  p-3  text-sm mt-3 font-medium text-white transition bg-pink-600 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring focus:ring-red-300"
+                  className="inline-block p-3 text-sm mt-3 font-medium text-white transition bg-pink-600 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring focus:ring-red-300"
                 >
                   Enroll Now
                 </Link>

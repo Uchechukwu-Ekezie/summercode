@@ -8,13 +8,13 @@ const OnlineClassInfo = () => {
       <h1 className="mb-6 text-3xl font-bold text-center text-red-600">
         Please Read Before Filling the Form
       </h1>
+      
       <h2 className="mb-4 text-xl font-semibold text-center">
         To join the online class you will need the following:
       </h2>
       <ul className="grid grid-cols-1 gap-4 p-0 mb-8 list-none sm:grid-cols-2">
         <li className="flex items-center">
-          <span className="mr-2">✓</span> Laptop or desktop with webcam with
-          headphones
+          <span className="mr-2">✓</span> Laptop or desktop 
         </li>
         <li className="flex items-center">
           <span className="mr-2">✓</span> Google Meet
@@ -32,6 +32,9 @@ const OnlineClassInfo = () => {
         if you have more than one, you enjoy sibling discount where each child
         pays <span className="font-bold">₦40,000</span>.
       </p>
+      <h1 className="text-2xl font-extrabold text-center text-[#48758E] mb-3">
+        Enroll Now Using Whatsapp 
+      </h1>
       <p className="mb-4 text-center">
         Please make payment to:
         <br />

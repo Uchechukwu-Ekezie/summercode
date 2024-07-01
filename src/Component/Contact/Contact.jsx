@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaFacebook, FaPhoneAlt, FaTwitter, FaWhatsapp } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaPhoneAlt, FaTwitter, FaWhatsapp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
@@ -51,17 +51,20 @@ function Contacts() {
               <Link to='https://x.com/glitz_tutors?s=11'>
                 <FaTwitter className='text-2xl'/>
               </Link>
-              <Link to='tel:+2347063284878'>
+              <Link to='tel:+2349036614542'>
                 <FaPhoneAlt className='text-2xl'/>
+              </Link>
+              <Link to='https://www.instagram.com/glitz_tutors?igsh=aHR4cHRtbTNtNWk5&utm_source=qr' target="_blank" >
+                <FaInstagram className='text-2xl'/>
               </Link>
             </div>
           </div>
-          <div className="p-8 bg-gray-800 rounded-lg shadow-lg lg:col-span-3 lg:p-12">
+          <div className="p-8 bg-[#48758E]  rounded-lg shadow-lg lg:col-span-3 lg:p-12">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label className="sr-only" htmlFor="name">Name</label>
                 <input
-                  className="w-full p-3 text-sm placeholder-yellow-500 bg-gray-700 border border-yellow-500 rounded-lg"
+                  className="w-full p-3 text-sm placeholder-white bg-gray-700 border border-white rounded-lg"
                   placeholder="Name"
                   type="text"
                   id="name"
@@ -73,7 +76,7 @@ function Contacts() {
                 <div>
                   <label className="sr-only" htmlFor="email">Email</label>
                   <input
-                    className="w-full p-3 text-sm placeholder-yellow-500 bg-gray-700 border border-yellow-600 rounded-lg"
+                    className="w-full p-3 text-sm placeholder-white bg-gray-700 border border-white rounded-lg"
                     placeholder="Email address"
                     type="email"
                     id="email"
@@ -84,7 +87,7 @@ function Contacts() {
                 <div>
                   <label className="sr-only" htmlFor="phone">Phone</label>
                   <input
-                    className="w-full p-3 text-sm placeholder-yellow-600 bg-gray-700 border border-yellow-600 rounded-lg"
+                    className="w-full p-3 text-sm placeholder-white bg-gray-700 border border-white rounded-lg"
                     placeholder="Phone Number"
                     type="tel"
                     id="phone"
@@ -96,7 +99,7 @@ function Contacts() {
               <div>
                 <label className="sr-only" htmlFor="message">Message</label>
                 <textarea
-                  className="w-full p-3 text-sm placeholder-yellow-600 bg-gray-700 border border-yellow-600 rounded-lg"
+                  className="w-full p-3 text-sm placeholder-white bg-gray-700 border border-white rounded-lg"
                   placeholder="Message"
                   rows="8"
                   id="message"
@@ -107,7 +110,7 @@ function Contacts() {
               <div className="mt-6">
                 <button
                   type="submit"
-                  className="inline-block w-full px-5 py-3 font-medium text-white transition duration-300 bg-yellow-600 rounded-lg hover:bg-yellow-700 sm:w-auto"
+                  className="inline-block w-full px-5 py-3 font-medium text-[#48758E] transition duration-300 bg-white rounded-lg hover:bg-yellow-700 sm:w-auto"
                 >
                   Send Enquiry
                 </button>
