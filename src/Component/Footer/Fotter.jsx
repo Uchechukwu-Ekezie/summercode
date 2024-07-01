@@ -68,7 +68,7 @@ const Footer = () => {
       
           </div>
 
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          {/* <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div>
               <p className="font-medium text-white">Services</p>
               <ul className="mt-6 space-y-4 text-sm">
@@ -98,7 +98,7 @@ const Footer = () => {
                   </Link>
                 </li>
               </ul>
-            </div>
+            </div> */}
 
             <div>
               <p className="font-medium text-gray-900">Courses</p>
@@ -126,9 +126,6 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-        </div>
-
-
         </div>
     
     </footer>
