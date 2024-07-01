@@ -1,16 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from "react";
 
 const RegistrationForm = () => {
   const [numChildren, setNumChildren] = useState(0);
+  const [totalCost, setTotalCost] = useState(0);
 
   const handleChildrenChange = (e) => {
-    setNumChildren(Number(e.target.value));
+    const count = Number(e.target.value);
+    setNumChildren(count);
   };
+
+  useEffect(() => {
+    let cost = 0;
+    if (numChildren === 1) {
+      cost = 50000;
+    } else if (numChildren > 1) {
+      cost = 40000 * numChildren;
+    }
+    setTotalCost(cost);
+  }, [numChildren]);
 
   return (
     <div className="p-4">
       <h1 className="mb-8 text-3xl font-extrabold text-center text-[#48758E]">
-        Enroll Now
+        Enroll Now Using Gmail
       </h1>
       <div className="max-w-lg mx-auto overflow-hidden bg-white rounded-lg shadow-md">
         <div className="px-6 py-8">
@@ -131,20 +143,23 @@ const RegistrationForm = () => {
               />
             </div>
 
+       
+
             <div className="mb-6">
               <label
-                htmlFor="message"
+                htmlFor="totalCost"
                 className="block text-gray-700 text-sm font-bold mb-2"
               >
-                Message (Optional)
+                Total Cost
               </label>
-              <textarea
-                id="message"
-                name="message"
-                rows="4"
-                placeholder="Enter any additional information"
+              <input
+                type="text"
+                id="totalCost"
+                name="totalCost"
+                value={`₦${totalCost}`}
                 className="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm"
-              ></textarea>
+                readOnly
+              />
             </div>
 
             <div className="flex items-center justify-center">
