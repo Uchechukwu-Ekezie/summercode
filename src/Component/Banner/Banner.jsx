@@ -11,6 +11,7 @@ function Banner() {
           {/* Video Section */}
           <div className="relative h-[35rem] lg:h-full">
             <video
+            controls
               autoPlay
               muted
               alt="Tech Event"
