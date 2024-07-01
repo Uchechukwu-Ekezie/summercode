@@ -11,8 +11,7 @@ function Banner() {
           {/* Video Section */}
           <div className="relative h-[35rem] lg:h-full">
             <video
-              autoPlay
-              muted
+              controls muted playsinline
               alt="Tech Event"
               src="/Assets/video/Glitzbanner.mp4"
               className="absolute inset-0 object-cover w-full h-full rounded-lg shadow-lg"
