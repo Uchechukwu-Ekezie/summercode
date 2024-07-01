@@ -1,10 +1,12 @@
 import React from 'react'
 import OnlineClassInfo from '../Component/OnlineClassInfo/OnlineClassInfo';
+import RegistrationForm from '../Component/RegistrationForm/RegistrationForm';
 
 function Registrationpage() {
     return (
         <div className="container p-6 mx-auto pt-28">
             <OnlineClassInfo/>
+            <RegistrationForm/>
             {/* <h1 className="mb-8 text-3xl font-extrabold text-center text-yellow-600">Enroll Now</h1>
             <div className="max-w-lg mx-auto overflow-hidden bg-white rounded-lg shadow-md">
                 <div className="px-6 py-8">

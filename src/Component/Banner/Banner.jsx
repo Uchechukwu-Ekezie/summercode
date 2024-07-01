@@ -26,7 +26,7 @@ function Banner() {
               Are you ready to take the next step in your tech career? Our training is the perfect opportunity to learn, grow, and excel in your chosen field.
             </p>
             <p className="mb-8 text-xl font-semibold text-gray-800">
-              ⏳ Registration Opens In: <CountDown />
+              ⏳ Registration Closes On: <CountDown />
             </p>
 
             {/* Discount Section */}

@@ -47,7 +47,7 @@ const Footer = () => {
 
             <ul className="mt-8 space-y-1 text-sm text-white">
               <li>Classes Schedule</li>
-              <li>Monday to Friday: 10am - 5pm</li>
+              <li>Monday to Friday: 11am - 1pm</li>
         
             </ul>
             <p className='mt-8 mb-4 text-xl font-semibold text-white'>Follow Us</p>

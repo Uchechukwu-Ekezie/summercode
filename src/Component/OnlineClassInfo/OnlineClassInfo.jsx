@@ -17,7 +17,7 @@ const OnlineClassInfo = () => {
           headphones
         </li>
         <li className="flex items-center">
-          <span className="mr-2">✓</span> Discord app
+          <span className="mr-2">✓</span> Google Meet
         </li>
         <li className="flex items-center">
           <span className="mr-2">✓</span> Fast Internet Connection (4G

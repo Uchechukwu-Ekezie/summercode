@@ -48,6 +48,29 @@ function ParentTest() {
           The personalized attention and the well-rounded curriculum have significantly boosted my child's confidence and academic performance.
           I can't recommend this program enough to other parents.`,
         },
+        {
+          name: "Bola Akinyele",
+          testimonial: `Enrolling my child in this program has been transformative. The teachers are not only highly skilled but also deeply caring.
+          My child has developed a genuine love for learning and a sense of curiosity that I hadn’t seen before. The community aspect of the program is also a huge plus,
+          making us feel like we're part of a big, supportive family. I highly recommend this program to other parents.`,
+        },
+        {
+          name: "Fatima Garba",
+          testimonial: `The impact this program has had on my child's education is outstanding. The structured and engaging curriculum keeps my child excited about learning.
+          The progress we've seen in their academic abilities and social skills is phenomenal. The program’s inclusive and nurturing environment is exactly what we were looking for.
+          This program is a fantastic choice for any parent wanting the best for their child.`,
+        },
+        {
+          name: "Olumide Ajayi",
+          testimonial: `Since joining this program, my child's attitude towards school has completely changed. The educators are incredibly passionate and the curriculum is both challenging and enjoyable.
+          My child has shown significant improvement in both their grades and self-confidence. I am thankful for the positive and encouraging atmosphere provided by this program.
+          I strongly recommend it to other parents.`,
+        },
+        {
+          name: "Zainab Mohammed",
+          testimonial: `This program has been exceptional for my child’s growth. The dedication of the teachers and the comprehensive curriculum have made a significant difference in my child’s education journey.
+          The supportive and collaborative environment has also fostered great friendships and social skills. I am extremely pleased with the progress my child has made and would highly recommend this program to others.`,
+        }
       ];
   return (
     <div>

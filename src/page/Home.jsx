@@ -7,6 +7,7 @@ import TechSkill from '../Component/Techskills/TechSkill'
 import CourseChoose from '../Component/Chooseus/CourseChoose'
 import OnlineClassInfo from '../Component/OnlineClassInfo/OnlineClassInfo'
 import SummerCamp from '../Component/SummerCamp/SummerCamp'
+import Sponsor from '../Component/Sponsor/Sponsor'
 
 
 function Home() {
@@ -19,6 +20,7 @@ function Home() {
         <OnlineClassInfo/>
         <ParentTest/>
         <CourseChoose/>
+        <Sponsor/>
 
     </div>
   )
