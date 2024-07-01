@@ -46,19 +46,23 @@ const Footer = () => {
             </p>
 
             <ul className="mt-8 space-y-1 text-sm text-white">
+              <li>Classes Schedule</li>
               <li>Monday to Friday: 10am - 5pm</li>
-              <li>Weekend: 10am - 3pm</li>
+        
             </ul>
             <p className='mt-8 mb-4 text-xl font-semibold text-white'>Follow Us</p>
             <div className='flex items-center gap-5 text-white '>
               <Link to='https://www.facebook.com/profile.php?id=61561607698897&mibextid=LQQJ4d' className='p-2 border-2 border-white rounded-md'>
                 <FaFacebook className='text-xl'/>
               </Link>
-              <Link to='https://wa.me/message/QY3F7BI5YPQON1' className='p-2 border-2 border-white rounded-md'>
+              <Link to='https://wa.me/message/QY3F7BI5YPQON1' target="_blank" className='p-2 border-2 border-white rounded-md'>
                 <FaWhatsapp className='text-xl'/>
               </Link> 
-              <Link to='https://x.com/glitz_tutors?s=11' className='p-2 border-2 border-white rounded-md'>
+              <Link to='https://x.com/glitz_tutors?s=11'  className='p-2 border-2 border-white rounded-md'>
                 <FaTwitter className='text-xl'/>
+              </Link>
+              <Link to='https://www.instagram.com/glitz_tutors?igsh=aHR4cHRtbTNtNWk5&utm_source=qr' target="_blank" className='p-2 border-2 border-white rounded-md'>
+                <FaInstagram className='text-xl'/>
               </Link>
             </div>
       

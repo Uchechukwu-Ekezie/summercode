@@ -13,7 +13,7 @@ function TechSkill() {
       name: "Web Development",
       img: "/Assets/Image/web-dev.png",
       path: "/courses/webdesign",
-      desc: "Learn the fundamentals of Web Development, from HTML, CSS, and JavaScript to advanced frameworks like React and Angular."
+      desc: "Learn the fundamentals of Web Development, from HTML, CSS, and JavaScript to advanced frameworks like Tailwind, React, Angular and Vue.js."
     },
     {
       name: "Cyber Security",

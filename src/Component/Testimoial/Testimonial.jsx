@@ -22,7 +22,7 @@ const Testimonials = ({ testimonials }) => {
     <section class="bg-gray-50">
   <div class="max-w-[100%] px-4 py-12 mx-auto sm:px-6 lg:px-8 xl:py-24">
   <div className="flex flex-col items-center justify-center lg:flex-row">
-          <div className="text-center w-full lg:w-[45%] mb-8 lg:mb-0">
+          <div className="text-center w-full lg:w-[45%] lg:mr-9 mb-8">
         <h2 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-2xl">
           Parents Love Our Program!
         </h2>

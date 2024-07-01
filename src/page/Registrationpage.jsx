@@ -1,9 +1,11 @@
 import React from 'react'
+import OnlineClassInfo from '../Component/OnlineClassInfo/OnlineClassInfo';
 
 function Registrationpage() {
     return (
-        <div className="container p-6 mx-auto">
-            <h1 className="mb-8 text-3xl font-extrabold text-center text-yellow-600">Enroll Now</h1>
+        <div className="container p-6 mx-auto pt-28">
+            <OnlineClassInfo/>
+            {/* <h1 className="mb-8 text-3xl font-extrabold text-center text-yellow-600">Enroll Now</h1>
             <div className="max-w-lg mx-auto overflow-hidden bg-white rounded-lg shadow-md">
                 <div className="px-6 py-8">
                     <form>
@@ -35,7 +37,7 @@ function Registrationpage() {
                         </div>
                     </form>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }

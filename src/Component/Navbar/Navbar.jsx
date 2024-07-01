@@ -19,12 +19,12 @@ function Navigation({ Enroll }) {
 
   return (
     <header className="fixed z-50 w-full shadow-md bg-[#48758E] ">
-    <div className="container flex items-center justify-between mx-auto my-2 md:px-6">
+    <div className="container flex items-center justify-between px-2 py-4 mx-auto my-2 md:px-6 ">
       <Link to="/" className="flex items-center">
         <img
-          src="/Assets/Image/Colorful_Brain_Human_Technology_Logo-removebg-preview.png"
+          src="/Assets/Image/glitznew.png"
           alt="logo"
-          className="w-16 h-16 md:w-24 md:h-24"
+          className="h-[40px] w-auto"
         />
       </Link>
 

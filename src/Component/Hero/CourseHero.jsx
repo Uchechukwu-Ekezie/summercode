@@ -22,7 +22,7 @@ function CourseHero() {
 
             <a
               href="/enroll"
-              className="inline-block px-12 py-3 mt-8 text-sm font-medium text-white transition bg-yellow-500 rounded hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
+              className="inline-block p-4 mt-8 text-sm font-medium text-white transition bg-yellow-500 rounded hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
             >
               Register now
             </a>
