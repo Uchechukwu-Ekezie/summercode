@@ -1,32 +1,44 @@
 import React, { useState } from 'react';
 import { FaFacebook, FaInstagram, FaPhoneAlt, FaTwitter, FaWhatsapp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import contactUsIn from '../../Hooks/useContact';
 
-function Contacts() {
+const Contacts = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
     message: '',
   });
-
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  const { contactUs } = contactUsIn();
+  
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.id]: e.target.value,
     });
   };
-  const handleSubmit = async (e) => {
+  
+  const handleSubmit = (e) => {
     e.preventDefault();
-
-    try {
-      const response = await axios.post('http://localhost:3001/send', formData);
-      alert(response.data);
-    } catch (error) {
-      alert('Failed to send message, please try again.');
-    }
+    contactUs(formData);
+    setFormSubmitted(true);
   };
+
+  if (formSubmitted) {
+    return (
+      <div className="p-4">
+        <h1 className="mb-8 text-2xl font-extrabold text-center text-[#48758E]">
+          Thank you for contacting us!
+        </h1>
+        <p className="text-center">Your message has been successfully sent.</p>
+        <ToastContainer />
+      </div>
+    );
+  }
 
   return (
     <section className="pt-24 text-white bg-white" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in">
@@ -70,6 +82,7 @@ function Contacts() {
                   id="name"
                   value={formData.name}
                   onChange={handleChange}
+                  required
                 />
               </div>
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -82,6 +95,7 @@ function Contacts() {
                     id="email"
                     value={formData.email}
                     onChange={handleChange}
+                    required
                   />
                 </div>
                 <div>
@@ -93,6 +107,7 @@ function Contacts() {
                     id="phone"
                     value={formData.phone}
                     onChange={handleChange}
+                    required
                   />
                 </div>
               </div>
@@ -105,6 +120,7 @@ function Contacts() {
                   id="message"
                   value={formData.message}
                   onChange={handleChange}
+                  required
                 ></textarea>
               </div>
               <div className="mt-6">
@@ -118,6 +134,7 @@ function Contacts() {
             </form>
           </div>
         </div>
+        <ToastContainer />
       </div>
     </section>
   );

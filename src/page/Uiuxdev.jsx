@@ -1,6 +1,6 @@
 import React from 'react'
 // import Meant from '../Component/CourseSelect/Webdesign/Meant'
-import Uiuxdesign from '../Component/CourseSelect/Uiuxdesign/Uiuxdesign'
+
 import UserProfileCard from '../Component/Card/Profilecard'
 import UiCurriculum from '../Component/CourseSelect/Uiuxdesign/UiCurriculum';
 import UiMeant from '../Component/CourseSelect/Uiuxdesign/UiMeant';
