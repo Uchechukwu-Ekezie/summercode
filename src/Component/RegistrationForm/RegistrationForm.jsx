@@ -1,12 +1,21 @@
 import React, { useState, useEffect } from "react";
+import useRegistration from "../../Hooks/useRegistration";
 
 const RegistrationForm = () => {
+  const [parentFirstName, setParentFirstName] = useState("");
+  const [parentLastName, setParentLastName] = useState("");
+  const [parentEmail, setParentEmail] = useState("");
   const [numChildren, setNumChildren] = useState(0);
   const [totalCost, setTotalCost] = useState(0);
+  const [children, setChildren] = useState([]);
+  const [formSubmitted, setFormSubmitted] = useState(false);
+
+  const {enrollCourse} = useRegistration()
 
   const handleChildrenChange = (e) => {
     const count = Number(e.target.value);
     setNumChildren(count);
+    setChildren(Array.from({ length: count }, () => ({ name: "", course: "" })));
   };
 
   useEffect(() => {
@@ -19,6 +28,41 @@ const RegistrationForm = () => {
     setTotalCost(cost);
   }, [numChildren]);
 
+  const handleChildChange = (index, field, value) => {
+    const updatedChildren = [...children];
+    updatedChildren[index][field] = value;
+    setChildren(updatedChildren);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const requestBody = {
+      parentsName: `${parentFirstName} ${parentLastName}`,
+      parentsEmail: parentEmail,
+      numberOfKids: numChildren,
+      total: totalCost,
+      children: children.map((child) => ({
+        childsName: child.name,
+        course: child.course,
+      })),
+    };
+    console.log("Request Body:", requestBody);
+    setFormSubmitted(true);
+    enrollCourse(requestBody);
+    // Submit request body to the server here
+  };
+
+  if (formSubmitted) {
+    return (
+      <div className="p-4">
+        <h1 className="mb-8 text-2xl font-extrabold text-center text-[#48758E]">
+          Thank you for enrolling!
+        </h1>
+        <p className="text-center">You have successfully submitted the form.</p>
+      </div>
+    );
+  }
+
   return (
     <div className="p-4">
       <h1 className="mb-8 text-2xl font-extrabold text-center text-[#48758E]">
@@ -26,7 +70,7 @@ const RegistrationForm = () => {
       </h1>
       <div className="max-w-lg mx-auto overflow-hidden bg-white rounded-lg shadow-md">
         <div className="px-6 py-8">
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label
                 className="block text-gray-700 text-sm font-bold mb-2"
@@ -39,6 +83,8 @@ const RegistrationForm = () => {
                 id="firstName"
                 type="text"
                 placeholder="Parent's First Name"
+                value={parentFirstName}
+                onChange={(e) => setParentFirstName(e.target.value)}
                 required
               />
             </div>
@@ -55,6 +101,8 @@ const RegistrationForm = () => {
                 id="lastName"
                 type="text"
                 placeholder="Parent's Last Name"
+                value={parentLastName}
+                onChange={(e) => setParentLastName(e.target.value)}
                 required
               />
             </div>
@@ -96,6 +144,10 @@ const RegistrationForm = () => {
                     name={`childFullName${index}`}
                     placeholder="Enter your child's full name"
                     className="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm"
+                    value={children[index].name}
+                    onChange={(e) =>
+                      handleChildChange(index, "name", e.target.value)
+                    }
                     required
                   />
                 </div>
@@ -110,6 +162,10 @@ const RegistrationForm = () => {
                     id={`childCourse${index}`}
                     name={`childCourse${index}`}
                     className="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm"
+                    value={children[index].course}
+                    onChange={(e) =>
+                      handleChildChange(index, "course", e.target.value)
+                    }
                     required
                   >
                     <option value="">Select a course</option>
@@ -120,7 +176,7 @@ const RegistrationForm = () => {
                     <option value="machinelearning">
                       AI & Machine Learning
                     </option>
-                    <option value="cybersecurity">Cybersecurity </option>
+                    <option value="cybersecurity">Cybersecurity</option>
                   </select>
                 </div>
               </div>
@@ -139,12 +195,11 @@ const RegistrationForm = () => {
                 name="email"
                 placeholder="Enter your email address"
                 className="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm"
+                value={parentEmail}
+                onChange={(e) => setParentEmail(e.target.value)}
                 required
               />
             </div>
-
-       
-
             <div className="mb-6">
               <label
                 htmlFor="totalCost"
