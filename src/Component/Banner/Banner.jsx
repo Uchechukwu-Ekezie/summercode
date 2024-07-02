@@ -11,7 +11,7 @@ function Banner() {
           {/* Video Section */}
           <div className="relative h-[35rem] lg:h-full">
             <video
-              controls muted playsinline
+              autoPlay loop muted playsinline
               alt="Tech Event"
               src="/Assets/video/Glitzbanner.mp4"
               className="absolute inset-0 object-cover w-full h-full rounded-lg shadow-lg"
@@ -49,7 +49,7 @@ function Banner() {
                 </div>
                 <Link
                   to="/enroll"
-                  className="inline-block p-3 text-sm mt-3 font-medium text-white transition bg-pink-600 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring focus:ring-red-300"
+                  className="inline-block p-3 mt-3 text-sm font-medium text-white transition bg-pink-600 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring focus:ring-red-300"
                 >
                   Enroll Now
                 </Link>
