@@ -1,11 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap')
-
-
-
-
+/* index.css */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
 body {
-  font-family: "Open Sans", sans-serif;
- 
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 700;
+  font-style: normal;
 }
-
-

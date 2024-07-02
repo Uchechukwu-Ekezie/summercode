@@ -30,7 +30,7 @@ const Testimonials = ({ testimonials }) => {
           This compilation features a carefully curated list of the top 10 parent reviews, providing valuable insights and perspectives on various topics.
         </p>
       </div>
-      <div class=" h-full lg:max-w-96 mt-8 lg:mt-0 max-w-[16rem]">
+      <div class=" h-full lg:max-w-96 mt-8 lg:mt-0 max-w-[16rem] overflow-hidden">
         <Swiper
           effect={"cards"}
           grabCursor={true}
