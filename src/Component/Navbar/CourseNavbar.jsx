@@ -13,15 +13,15 @@ function CourseNavbar({ Enroll }) {
   const navItems = [
     { id: 1, text: "Home", link: "/" },
     { id: 4, text: "Ai & Ml", link: "/courses/ai_machine" },
+    { id: 3, text: "Cyber Security", link: "/courses/cyber-sec" },
     { id: 4, text: "Web Dev", link: "/courses/webdesign" },
-    { id: 2, text: "Digital Media", link: "/courses/uiuxdesign" },
-    { id: 3, text: "Cyber Security", link: "/courses/cyber-sec" }
+    { id: 2, text: "Digital Media", link: "/courses/uiuxdesign" }
   ];
  
 
   return (
     <header className="fixed z-50 w-full shadow-md bg-[#48758E] ">
-    <div className="container flex items-center justify-between px-2 py-2 mx-auto my-2 md:px-6 ">
+    <div className="container flex items-center justify-between px-2 mx-auto my-2 md:px-6 lg:py-2 ">
     <Link to="/" className="flex-col items-center justify-center lg:flex">
         <img
           src="/Assets/Image/logo.png"

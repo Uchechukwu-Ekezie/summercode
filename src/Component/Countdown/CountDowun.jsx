@@ -2,45 +2,37 @@ import React, { useState, useEffect } from 'react';
 import "./CountDown.css";
 
 function CountDown() {
-  const [timeLeft, setTimeLeft] = useState({
-    days: 28,
-    hours: 10,
-    minutes: 24,
-    seconds: 32,
-  });
+  const calculateTimeLeft = () => {
+    const targetDate = new Date('2024-07-29T00:00:00'); // Set the target date and time
+    const now = new Date();
+    const difference = targetDate - now;
+
+    let timeLeft = {};
+
+    if (difference > 0) {
+      timeLeft = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
+      };
+    }
+
+    return timeLeft;
+  };
+
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft);
 
   useEffect(() => {
     const countdownInterval = setInterval(() => {
-      setTimeLeft((prevTime) => {
-        let { days, hours, minutes, seconds } = prevTime;
-
-        if (seconds > 0) {
-          seconds--;
-        } else if (minutes > 0) {
-          seconds = 59;
-          minutes--;
-        } else if (hours > 0) {
-          seconds = 59;
-          minutes = 59;
-          hours--;
-        } else if (days > 0) {
-          seconds = 59;
-          minutes = 59;
-          hours = 23;
-          days--;
-        } else {
-          clearInterval(countdownInterval);
-        }
-
-        return { days, hours, minutes, seconds };
-      });
+      setTimeLeft(calculateTimeLeft());
     }, 1000);
 
     return () => clearInterval(countdownInterval);
   }, []);
 
   return (
-    <div className="flex justify-center gap-5 text-center ">
+    <div className="flex justify-center gap-5 text-center">
       <div className="flex items-center">
         <span className="font-mono text-xl">
           {timeLeft.days}

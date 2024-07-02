@@ -101,7 +101,7 @@ const Footer = () => {
             </div> */}
 
             <div>
-              <p className="font-medium text-gray-900">Courses</p>
+              <p className="font-medium text-white">Courses</p>
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
                   <Link to="/courses/ai_machine" className="text-white transition hover:opacity-75">
