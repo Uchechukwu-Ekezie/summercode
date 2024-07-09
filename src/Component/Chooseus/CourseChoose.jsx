@@ -4,12 +4,12 @@ import {
   FaFolderOpen,
   FaShieldAlt,
   FaTag,
-  
   FaRobot,
   FaCertificate,
   FaHandsHelping,
 } from "react-icons/fa";
 import { FaMedal } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 function CourseChoose() {
   const feature = [
@@ -48,7 +48,7 @@ function CourseChoose() {
       title: "Technology-Driven",
       desc: "We leverage the latest technology to provide an engaging and effective learning experience for your child.",
     },
-   
+
     {
       icon: <FaCertificate />,
       title: "Verified Certifications",
@@ -60,9 +60,7 @@ function CourseChoose() {
     <section className="text-black bg-[#cdd6ec]">
       <div className="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="max-w-lg mx-auto text-center">
-          <h2 className="text-3xl font-bold sm:text-4xl">
-            Why Choose Us
-          </h2>
+          <h2 className="text-3xl font-bold sm:text-4xl">Why Choose Us</h2>
 
           <p className="mt-4 text-black">
             Summer holidays are here, and Glitz Tutor is ready to keep your
@@ -76,7 +74,10 @@ function CourseChoose() {
 
         <div className="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3">
           {feature.map((item, index) => (
-            <div key={index} className="flex items-center p-8 space-x-4 transition border border-gray-800 shadow-xl rounded-xl hover:border-[#48758E] hover:shadow-[#48758E]">
+            <div
+              key={index}
+              className="flex items-center p-8 space-x-4 transition border border-gray-800 shadow-xl rounded-xl hover:border-[#48758E] hover:shadow-[#48758E]"
+            >
               <div className="w-16 h-16 p-4 text-2xl bg-white rounded-full">
                 {item.icon}
               </div>
@@ -89,12 +90,12 @@ function CourseChoose() {
         </div>
 
         <div className="mt-12 text-center">
-          <a
-            href="/courses"
+          <Link
+            to="/courses"
             className="inline-block px-12 py-3 text-sm font-medium text-white transition bg-pink-600 rounded hover:bg-pink-700 focus:outline-none focus:ring focus:ring-yellow-400"
           >
             Get Started Today
-          </a>
+          </Link>
         </div>
       </div>
     </section>

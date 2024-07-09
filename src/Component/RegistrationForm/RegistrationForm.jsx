@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import useRegistration from "../../Hooks/useRegistration";
-import { ToastContainer } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
 const RegistrationForm = () => {
@@ -10,6 +10,7 @@ const RegistrationForm = () => {
   const [numChildren, setNumChildren] = useState(0);
   const [totalCost, setTotalCost] = useState(0);
   const [children, setChildren] = useState([]);
+  const [referral, setReferral] = useState("");
   const [formSubmitted, setFormSubmitted] = useState(false);
 
   const { enrollCourse } = useRegistration();
@@ -36,8 +37,17 @@ const RegistrationForm = () => {
     setChildren(updatedChildren);
   };
 
+  const validateEmail = (email) => {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!validateEmail(parentEmail)) {
+      toast.error("Please enter a valid email address.");
+      return;
+    }
     const requestBody = {
       parentsName: `${parentFirstName} ${parentLastName}`,
       parentsEmail: parentEmail,
@@ -47,6 +57,7 @@ const RegistrationForm = () => {
         childsName: child.name,
         course: child.course,
       })),
+      referral,
     };
     console.log("Request Body:", requestBody);
     setFormSubmitted(true);
@@ -202,6 +213,25 @@ const RegistrationForm = () => {
                 required
               />
             </div>
+
+            <div className="mb-6">
+              <label
+                htmlFor="referral"
+                className="block mb-2 text-sm font-bold text-gray-700"
+              >
+                Referral Code (optional)
+              </label>
+              <input
+                type="text"
+                id="referral"
+                name="referral"
+                placeholder="Enter referral code or name"
+                className="w-full px-4 py-3 leading-tight text-gray-700 transition-colors duration-300 ease-in-out border rounded shadow appearance-none focus:outline-none focus:shadow-outline focus:border-blue-500"
+                value={referral}
+                onChange={(e) => setReferral(e.target.value)}
+              />
+            </div>
+
             <div className="mb-6">
               <label
                 htmlFor="totalCost"

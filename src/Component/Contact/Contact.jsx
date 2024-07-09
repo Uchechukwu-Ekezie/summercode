@@ -12,6 +12,7 @@ const Contacts = () => {
     phone: '',
     message: '',
   });
+  const [emailError, setEmailError] = useState('');
   const [formSubmitted, setFormSubmitted] = useState(false);
   const { contactUs } = contactUsIn();
   
@@ -20,10 +21,25 @@ const Contacts = () => {
       ...formData,
       [e.target.id]: e.target.value,
     });
+
+    if (e.target.id === 'email') {
+      setEmailError('');
+    }
   };
-  
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!validateEmail(formData.email)) {
+      setEmailError('Please enter a valid email address.');
+      return;
+    }
+
     contactUs(formData);
     setFormSubmitted(true);
   };
@@ -97,6 +113,7 @@ const Contacts = () => {
                     onChange={handleChange}
                     required
                   />
+                  {emailError && <p className="text-sm text-red-500">{emailError}</p>}
                 </div>
                 <div>
                   <label className="sr-only" htmlFor="phone">Phone</label>

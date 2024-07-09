@@ -1,6 +1,7 @@
 import React from "react";
 import './Hero.css'; 
 import 'aos/dist/aos.css'// Make sure to import your CSS file
+import { Link } from "react-router-dom";
 
 function CourseHero() {
   return (
@@ -20,12 +21,12 @@ function CourseHero() {
               to the latest trends and developments in the tech industry.
             </p>
 
-            <a
-              href="/enroll"
+            <Link
+              to="/enroll"
               className="inline-block p-4 mt-8 text-sm font-medium text-white transition bg-yellow-500 rounded hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
             >
               Register now
-            </a>
+            </Link>
           </div>
 
           <div className="relative h-full rounded-lg sm:h-80 lg:order-last lg:h-full">

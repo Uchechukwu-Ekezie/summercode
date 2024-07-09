@@ -2,7 +2,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 const contactUsIn = () => {
-    const url = "";
+    const url = "https://glitzapi.onrender.com/contact-us";
 
     const contactUs = async (contactUsData) => {
         try {
