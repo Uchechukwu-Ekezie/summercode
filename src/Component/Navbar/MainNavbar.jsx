@@ -19,7 +19,7 @@ function MainNavbar({ Enroll }) {
   const navItems = [
     { id: 1, text: "Home", link: "/" },
     {
-      id: 2, text: "Section", items: [
+      id: 2, text: "Categories", items: [
         { id: 2.1, text: "Children Bootcamp", link: "/childrenhome" },
         { id: 2.2, text: "Adult Bootcamp", link: "/adulthome" },
       ]
