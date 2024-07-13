@@ -13,23 +13,31 @@ import Cybersec from './page/Cybersec';
 import AiMachine from './page/AiMachine';
 import ScrollToTop from './ScrollToTop';
 import WhatsAppIcon from './Component/Whatsapp/Whatsapp';
+import MainHome from './page/MainHome';
+import AdultHome from './page/AdultPage/AdultHome';
+import BackendDev from './page/AdultPage/BackendDev';
+import CoursesAdult from './page/AdultPage/Courses';
 
 function App() {
   return (
     <div className="App">
-        <Router>
-          <ScrollToTop/>
+      <Router>
+        <ScrollToTop/>
         <Routes>
           <Route path="/" element={<RootLayout/>}>
-            <Route index element={<Home />} />
-            <Route path="/courses" element={<Courses />} />
-            <Route path="/courses/webdesign" element={<Webdev />} />
+            <Route index element={<MainHome />} />
+            <Route path='/childrenhome' element={<Home />} />
+            <Route path="/childrenhome/courses" element={<Courses />} />
+            <Route path="/childrenhome/courses/webdesign" element={<Webdev />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/enroll" element={<Registrationpage/>}/>
-            <Route path="/courses/ai_machine" element={<AiMachine/>} />
-            <Route path="/courses/uiuxdesign" element={<Uiuxdev/>} />
-            <Route path="/courses/digitalmarket" element={<DigitalMarketdev/>}/>
-            <Route path="/courses/cyber-sec" element={<Cybersec/>}/>
+            <Route path="/childrenhome/enroll" element={<Registrationpage/>}/>
+            <Route path="/childrenhome/courses/ai_machine" element={<AiMachine/>} />
+            <Route path="/childrenhome/courses/uiuxdesign" element={<Uiuxdev/>} />
+            <Route path="/childrenhome/courses/digitalmarket" element={<DigitalMarketdev/>}/>
+            <Route path="/childrenhome/courses/cyber-sec" element={<Cybersec/>}/>
+            <Route path="/adulthome" element={<AdultHome/>}/>
+            <Route path="/adulthome/coursess" element={<CoursesAdult/>}/>
+            <Route path="/adulthome/coursess/backenddev" element={<BackendDev/>}/>
           </Route>
         </Routes>
         <WhatsAppIcon/>

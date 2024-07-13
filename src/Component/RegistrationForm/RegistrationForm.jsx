@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import useRegistration from "../../Hooks/useRegistration";
 import { ToastContainer, toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 
 const RegistrationForm = () => {
   const [parentFirstName, setParentFirstName] = useState("");
@@ -18,7 +18,9 @@ const RegistrationForm = () => {
   const handleChildrenChange = (e) => {
     const count = Number(e.target.value);
     setNumChildren(count);
-    setChildren(Array.from({ length: count }, () => ({ name: "", course: "" })));
+    setChildren(
+      Array.from({ length: count }, () => ({ name: "", course: "" }))
+    );
   };
 
   useEffect(() => {
@@ -143,7 +145,10 @@ const RegistrationForm = () => {
             </div>
 
             {Array.from({ length: numChildren }, (_, index) => (
-              <div key={index} className="p-4 mb-6 rounded-lg shadow-inner bg-gray-50">
+              <div
+                key={index}
+                className="p-4 mb-6 rounded-lg shadow-inner bg-gray-50"
+              >
                 <div className="mb-4">
                   <label
                     htmlFor={`childFullName${index}`}

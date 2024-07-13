@@ -11,11 +11,11 @@ function CourseNavbar({ Enroll }) {
     setIsOpen(!isOpen);
   };
   const navItems = [
-    { id: 1, text: "Home", link: "/" },
-    { id: 4, text: "Ai & Ml", link: "/courses/ai_machine" },
-    { id: 3, text: "Cyber Security", link: "/courses/cyber-sec" },
-    { id: 4, text: "Web Dev", link: "/courses/webdesign" },
-    { id: 2, text: "Digital Media", link: "/courses/uiuxdesign" }
+    { id: 1, text: "Home", link: "/childrenhome" },
+    { id: 4, text: "Ai & Ml", link: "/childrenhome/courses/ai_machine" },
+    { id: 3, text: "Cyber Security", link: "/childrenhome/courses/cyber-sec" },
+    { id: 4, text: "Web Dev", link: "/childrenhome/courses/webdesign" },
+    { id: 2, text: "Digital Media", link: "/childrenhome/courses/uiuxdesign" }
   ];
  
 
