@@ -2,6 +2,7 @@ import React from 'react'
 import Herod from '../Component/MainHome/Herod'
 import Part from '../Component/MainHome/Part'
 import WeOffer from '../Component/MainHome/WeOffer'
+import Prices from '../Component/MainHome/Price'
 
 function MainHome() {
   return (
@@ -9,6 +10,7 @@ function MainHome() {
      <Herod/>
      <Part/>
      <WeOffer/>
+     <Prices/>
       
     </div>
   )

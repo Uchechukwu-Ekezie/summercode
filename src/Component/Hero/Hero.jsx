@@ -1,6 +1,5 @@
 import React from "react";
 import Tech from "../../Assets/Tech.json";
-
 import Lottie from "react-lottie";
 import { Link } from "react-router-dom";
 

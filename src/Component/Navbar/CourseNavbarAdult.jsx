@@ -15,8 +15,9 @@ function CourseNavbarAdult({ Enroll }) {
     { id: 1, text: "Home", link: "/adulthome" },
     { id: 2, text: "Backend Dev", link: "/adulthome/courses/backenddev" },
     { id: 3, text: "Cyber Security", link: "/adulthome/courses/cyber-sec" },
-    { id: 4, text: "Web Dev", link: "/adulthome/courses/webdesign" },
-    { id: 5, text: "Digital Media", link: "/adulthome/courses/uiuxdesign" },
+    { id: 4, text: "Software Eng", link: "/adulthome/courses/webdesign" },
+    { id: 5, text: "Data Science", link: "/adulthome/courses/uiuxdesign" },
+    { id: 5, text: "Product Manager", link: "/adulthome/courses/uiuxdesign" },
   ];
 
   return (

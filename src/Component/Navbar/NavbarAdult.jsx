@@ -20,7 +20,7 @@ function NavigationAdult({ Enroll }) {
   return (
     <header className="fixed z-50 w-full shadow-md bg-[#48758E] ">
       <div className="container flex items-center justify-between px-2 mx-auto my-2 md:px-6 lg:py-2">
-        <Link to="/adulthome" className="flex-col items-center justify-center lg:flex">
+        <Link to="/" className="flex-col items-center justify-center lg:flex">
           <img
             src="/Assets/Image/logo.png"
             alt="logo"

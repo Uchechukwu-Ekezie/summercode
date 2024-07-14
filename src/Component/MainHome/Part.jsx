@@ -6,7 +6,7 @@ function Part() {
       <img
         alt=""
         src="/Assets/Image/abeeg.png"
-        className="hidden object-cover w-full h-56 sm:h-full lg:block"
+        className="hidden object-cover w-full h-56 sm:h-full lg:block md:block"
       />
 
       <div className="p-8 md:p-12 lg:px-16 lg:py-24">

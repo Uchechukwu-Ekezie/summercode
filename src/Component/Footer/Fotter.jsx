@@ -68,66 +68,25 @@ const Footer = () => {
       
           </div>
 
-          {/* <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            <div>
-              <p className="font-medium text-white">Services</p>
-              <ul className="mt-6 space-y-4 text-sm">
-                <li>
-                  <Link to="#" className="text-white transition hover:opacity-75">
-                    1on1 Coaching
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#" className="text-white transition hover:opacity-75">
-                    Company Review
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#" className="text-white transition hover:opacity-75">
-                    Accounts Review
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#" className="text-white transition hover:opacity-75">
-                    HR Consulting
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#" className="text-white transition hover:opacity-75">
-                    SEO Optimization
-                  </Link>
-                </li>
-              </ul>
-            </div> */}
 
             <div>
-              <p className="font-medium text-white">Courses</p>
+              <p className="font-medium text-white">Category</p>
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
-                  <Link to="/courses/ai_machine" className="text-white transition hover:opacity-75">
-                    AI / Machine Learning
+                  <Link to="/childrenhome" className="text-white transition hover:opacity-75">
+                    Children Bootcamp
                   </Link>
                 </li>
                 <li>
-                  <Link to="/courses/webdesign" className="text-white transition hover:opacity-75">
-                    Web Development
+                  <Link to="/adulthome" className="text-white transition hover:opacity-75">
+                    Adult Bootcamp
                   </Link>
                 </li>
-                <li>
-                  <Link to="/courses/cyber-sec" className="text-white transition hover:opacity-75">
-                    Cyber Security
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/courses/uiuxdesign" className="text-white transition hover:opacity-75">
-                    Digital media
-                  </Link>
-                </li>
+               
               </ul>
             </div>
           </div>
         </div>
-    
     </footer>
   );
 };
