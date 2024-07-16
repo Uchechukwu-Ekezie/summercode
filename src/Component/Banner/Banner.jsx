@@ -48,7 +48,7 @@ function Banner() {
                   </div>
                 </div>
                 <Link
-                  to="/enroll"
+                  to="/childrenhome/enroll"
                   className="inline-block p-3 mt-3 text-sm font-medium text-white transition bg-pink-600 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring focus:ring-red-300"
                 >
                   Enroll Now

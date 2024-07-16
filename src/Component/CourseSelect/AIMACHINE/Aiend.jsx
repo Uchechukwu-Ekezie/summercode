@@ -21,7 +21,7 @@ function Aiend() {
 
           <div className="flex flex-wrap justify-center gap-4 mt-8">
             <Link
-              to="/enroll"
+              to="/childrenhome/enroll"
               className="block w-full rounded bg-[#48758E] px-12 py-3 text-sm font-medium text-white shadow hover:bg-red-700 focus:outline-none focus:ring active:bg-red-500 sm:w-auto"
             >
               Enroll Now

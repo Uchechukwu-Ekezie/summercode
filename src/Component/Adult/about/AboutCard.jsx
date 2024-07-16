@@ -1,7 +1,6 @@
 import React from "react";
 import "./about.css";
 import { homeAbout } from "../../../dummydata";
-import Awrapper from "./Awrapper";
 import Heading from "../../common/heading/Heading";
 import aboutImage from "../../..//Assets/about.webp";
 
@@ -31,7 +30,6 @@ const AboutCard = () => {
           </div>
         </div>
       </section>
-      <Awrapper />
     </>
   );
 };

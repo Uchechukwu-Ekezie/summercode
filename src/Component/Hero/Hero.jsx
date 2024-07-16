@@ -26,7 +26,7 @@ function Hero() {
               with the skills they need to shape the future.
             </p>
             <Link
-              to="/courses"
+              to="/childrenhome/courses"
               className="inline-block px-4 py-2 mt-8 font-semibold transition bg-pink-500 rounded-xl textwhite botext-sm hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
             >
               Get Started Today

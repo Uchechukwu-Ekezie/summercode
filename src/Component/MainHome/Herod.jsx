@@ -28,11 +28,11 @@ function Herod() {
             </Link>
             <div className="flex ml-5 space-x-4 ">
               <div>
-                <h3 className="text-[20px] font-bold">10+</h3>
+                <h3 className="text-[20px] font-bold mb-[-6px]">10+</h3>
                 <p className="text-[12px]">Career Courses</p>
               </div>
               <div>
-                <h3 className="text-[20px] font-bold">2k+</h3>
+                <h3 className="text-[20px] font-bold mb-[-6px]">2k+</h3>
                 <p className="text-[12px]">Students</p>
               </div>
             </div>

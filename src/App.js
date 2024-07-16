@@ -17,6 +17,7 @@ import MainHome from './page/MainHome';
 import AdultHome from './page/AdultPage/AdultHome';
 import BackendDev from './page/AdultPage/BackendDev';
 import CoursesAdult from './page/AdultPage/Courses';
+import AdultCourseSelect from './page/AdultPage/AdultCourseSelect';
 
 function App() {
   return (
@@ -36,7 +37,7 @@ function App() {
             <Route path="/childrenhome/courses/digitalmarket" element={<DigitalMarketdev/>}/>
             <Route path="/childrenhome/courses/cyber-sec" element={<Cybersec/>}/>
             <Route path="/adulthome" element={<AdultHome/>}/>
-            <Route path="/adulthome/coursess" element={<CoursesAdult/>}/>
+            <Route path="/adulthome/coursess" element={<AdultCourseSelect/>}/>
             <Route path="/adulthome/coursess/backenddev" element={<BackendDev/>}/>
           </Route>
         </Routes>
