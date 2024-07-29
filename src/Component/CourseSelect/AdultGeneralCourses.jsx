@@ -73,9 +73,9 @@ function AdultGeneralCourses() {
                       marginRight: "10px",
                     }}
                   >
-                    ₦100,000
+                    ₦200,000
                   </span>
-                  <span>₦50,000</span>
+                  <span>₦150,000</span>
                 </h2>
                 <p className="mt-2 text-gray-700">{course.desc}</p>
               </div>

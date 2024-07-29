@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import Backend from "../../Component/AdultCourses/Backen/Backend";
+import BackMent from "../../Component/AdultCourses/Backen/BackMent";
+import BackHero from "../../Component/AdultCourses/Backen/BackHero";
 
 function BackendDev() {
   return (
-    <div>BackendDev</div>
-  )
+    <div className="pt-24">
+      <BackHero/>
+      <BackMent />
+      <Backend />
+    </div>
+  );
 }
 
-export default BackendDev
+export default BackendDev;

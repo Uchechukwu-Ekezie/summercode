@@ -18,6 +18,9 @@ import AdultHome from './page/AdultPage/AdultHome';
 import BackendDev from './page/AdultPage/BackendDev';
 import CoursesAdult from './page/AdultPage/Courses';
 import AdultCourseSelect from './page/AdultPage/AdultCourseSelect';
+import Cybersecurity from './page/AdultPage/Cybersecurity';
+import Softwaree from './page/AdultPage/Softwaree';
+
 
 function App() {
   return (
@@ -39,6 +42,8 @@ function App() {
             <Route path="/adulthome" element={<AdultHome/>}/>
             <Route path="/adulthome/coursess" element={<AdultCourseSelect/>}/>
             <Route path="/adulthome/coursess/backenddev" element={<BackendDev/>}/>
+            <Route path="/adulthome/coursess/cybersecurity" element={<Cybersecurity/>}/>
+            <Route path="/adulthome/coursess/softwareeng" element={<Softwaree/>}/>
           </Route>
         </Routes>
         <WhatsAppIcon/>

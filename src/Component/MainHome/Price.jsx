@@ -99,7 +99,7 @@ function Prices() {
             </h2>
 
             <p className="mt-2 sm:mt-4">
-              <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> ₦50,000 </strong>
+              <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> ₦150,000 </strong>
 
               <span className="text-sm font-medium text-gray-700">/PER PERSON</span>
             </p>
